@@ -37,7 +37,7 @@ If a proposal is rejected, a quorum of no less than 5 users may petition for the
 ---
 ### Stage II
 
-If a proposal from Stage I gains enough traction and maturity within the community, and has the blessing of moderators, it is encouraged that some number of members coordinate with each other and propose to form a UCI **working group**.
+If a proposal from Stage I gains enough traction and maturity within the community, some number of members may coordinate with each other and propose to form a **working group** to formalize the proposal.
 
 The working group proposal is put forward by creating a pull request for the addition of a *Stage II working group proposal* to the 'Active Working Groups' subdirectory of this repository.
 
