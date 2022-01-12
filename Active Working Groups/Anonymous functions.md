@@ -1,6 +1,6 @@
 # Problem statement
 
-# Summary of proposal
+# WG Website and Working Documentation
 
 # Working group members
 

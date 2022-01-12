@@ -2,7 +2,7 @@
 
 ## What is Ada User Community Input?
 
-The Ada User Community Input is a clearly defined **process** supported by appropriate infrastructure to facilitate Ada users from the community at-large to advocate new features for consideration by the ARG for possible inclusion to future revisions of the Ada language.
+The Ada User Community Input is a clearly defined **process** supported by appropriate infrastructure to facilitate Ada users from the community at-large to identify existing issues with the Ada Reference Manual, or to advocate new features for consideration by the ARG for possible inclusion to future revisions of the Ada language.
 
 The UCI process defines a way for interested users to explore ideas, propose working groups, and collaborate on concrete language proposals that the ARG can formally deliberate on.
 
@@ -12,6 +12,10 @@ Not exactly. This repository is only the community facing portion that tracks st
 
 The Ada UCI process is developed and maintained by a dedicated ARG working group that aims to design a process that is platform independent and transparent.
 
+An alternate interface for those not familiar with github is also available at (link), where issues can be submitted directly, and working groups can be proposed.
+
+Additionally, a set of Google Docs mirror the issues and working groups seen (here).
+
 ## What is the Ada UCI Process?
 
 The Ada UCI process applies to any given language change proposal that evolves through a three stage process.
@@ -19,29 +23,48 @@ The Ada UCI process applies to any given language change proposal that evolves t
 ---
 ### Stage I
 
-
-All proposed changes and ideas begin in Stage I. The idea is to make the proposal of languages changes and new features as easy as possible, with the lowest possible barrier. Stage I is about presenting ideas, and discussing the merits and/or issues with those ideas among the community.
+All proposed change and ideas begin in Stage I. The idea is to make the proposal of languages changes and new features as easy as possible, with the lowest possible barrier. Stage I is about presenting ideas, seeking clarification (potentially interpretation), and discussing the merits and/or issues with those ideas among the community.
 
 Valid proposals to Stage I are really any coherent idea for a change or new feature. This can be as small as a few sentences. The goal of Stage I is to have open debate and discussion about the proposal, and is not about developing a specific, formal proposal.
 
-Discussions of Stage I should be open to all participants, and the discussion should remain visible to anyone.
+Discussions of Stage I are open to all participants, and the discussion will remain visible to anyone.
 
-Moderators, appointed by the ARG, will review and provide commentary on proposals that are similar to existing proposals, or Stage II Working Groups (Active or Disbanded).
+Moderators will monitor new issues for issues that have already been proposed at an earlier time, are in a working group, or have already been considered by the ARG. In such cases, moderators will make a reference to the relevant issue/WG/AI in the discussion. Moderators may also assign an appropriate tag such as _Duplicate_, _In WG_ or _ARG Concluded_
 
-If a proposal conflicts or compliments with an existing Stage I Proposal, Stage II Working Group, Stage III AI, or existing Ada feature, or is very likely to be rejected by the ARG (inappropriate for Ada), the moderators may decide to close a Stage I proposal. Previous closures of proposals can also serve as precedent for the closure of subsequent similar proposals.
+**Instructions**
 
-The ARG UCI working group puts great importance on the reasonable consideration of all proposals, but at the same time, the moderators must consider proposals in the context of the ARG, including in the context of guiding design principals of Ada.
+To propose a language change, bug fix, or new capability, simply create a standard issue on this repository.
 
-If a proposal is rejected, a quorum of no less than 5 users may petition for the ARG to directly consider the proposal, and make a final determination.
+The title should give a concise description as possible.
+
+The issue should be given one of the following tags:
+* **Comment**: Issues/observations that the user does not necessarily have a proposal for. Comments generally will not progress to Stage II.
+* **Question**: A request for clarification or interpretation of an aspect of Ada or the Ada Reference Manual. If a binding interpretation becomes a goal, Questions may propose to an abbreviated Stage II for consideration by the ARG.
+* **Bug Report**: An issue with the current Ada Reference Manual
+* **Feature Request**: A proposal for a new language feature or capability (feature request)
+
+Finally, a description should informally describe the comment, question, bug, or feature, including a very generalized (high-level) 
+
+Alternatively, those not familiar with Github issues may use the (web form). Submissions to the webform will be synchronized as new issues in this repository (and vice-versa).
 
 ---
 ### Stage II
 
-If a proposal from Stage I gains enough traction and maturity within the community, some number of members may coordinate with each other and propose to form a **working group** to formalize the proposal.
+If a some number of members may coordinate with each other and propose to form a **working group** to formalize the proposal.
 
-The working group proposal is put forward by creating a pull request for the addition of a *Stage II working group proposal* to the 'Active Working Groups' subdirectory of this repository.
+The Working Group takes on the issue stated in the proposal, and works towards the completion of a formal AI for consideration by the ARG.
 
-The working group is then responsible for coordinating amongst themselves to work towards a formal proposal for consideration by the ARG.
+Working groups are responsible for coordinating amongst themselves to develop a a formal proposal (AI) for consideration by the ARG.
+
+**Instructions**
+
+When forming the working group, a shared Google Drive folder must be created that contains all working materials of the working group. This folder must be publicly readable, and the link to that folder must be provided in the working group proposal. The working group can organize the content of this folder as they see fit.
+
+The working group proposal is put forward by creating a pull request for the addition of a *Stage II working group proposal* to the 'Active Working Groups' subdirectory of this repository, following the [Active Working Group Template](https://github.com/).
+
+Alternatively, working groups can use the (webform) to make a request to form a working group.
+
+
 
 The proposal should follow the official template (here) and should be submitted by the working group as a pull request to the 'Final Proposals' subdirectory.
 
