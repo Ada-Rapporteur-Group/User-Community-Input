@@ -2,7 +2,7 @@
 
 ## What is Ada User Community Input?
 
-The Ada User Community Input is a clearly defined **process** supported by appropriate infrastructure to facilitate Ada users from the community at-large to identify existing issues with the Ada Reference Manual, or to advocate new features for consideration by the ARG for possible inclusion to future revisions of the Ada language.
+The Ada User Community Input is a clearly defined process supported by appropriate infrastructure to facilitate Ada users from the community at-large to identify existing issues with the Ada Reference Manual, or to advocate new features for consideration by the ARG for possible inclusion to future revisions of the Ada language.
 
 The UCI process defines a way for interested users to explore ideas, propose working groups, and collaborate on concrete language proposals that the ARG can formally deliberate on.
 
@@ -23,11 +23,11 @@ The Ada UCI process applies to any given language change proposal that evolves t
 
 All proposed change and ideas begin in Stage I. The idea is to make the proposal of languages changes and new features as easy as possible, with the lowest possible barrier. Stage I is about presenting ideas, seeking clarification (potentially interpretation), and discussing the merits and/or issues with those ideas among the community.
 
-Valid proposals to Stage I are really any coherent idea for a change or new feature. This can be as small as a few sentences. The goal of Stage I is to have open debate and discussion about the proposal, and is not about developing a specific, formal proposal.
+Valid proposals Stage I submissions are really any coherent idea or question. This can be as small as a few sentences. The goal of Stage I is to have open debate and (initial) discussion about a given issue, and not about developing a specific, formal proposal.
 
 Discussions of Stage I are open to all participants, and the discussion will remain visible to anyone.
 
-Moderators will monitor new issues for issues that have already been proposed at an earlier time, are in a working group, or have already been considered by the ARG. In such cases, moderators will make a reference to the relevant issue/WG/AI in the discussion. Moderators may also assign an appropriate tag such as _Duplicate_, _In WG_ or _ARG Concluded_
+Moderators will monitor new issues for issues that have already been proposed at an earlier time, are in a working group, or have already been considered by the ARG. In such cases, moderators will make a reference to the relevant issue/WG/AI in the discussion. Moderators may also assign an an associated tag such as _Duplicate_, _In WG_ or _ARG Concluded_
 
 Stage I items are mirrored in Google Docs [here](https://temp.address/)
 
