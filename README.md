@@ -33,7 +33,7 @@ It is encouraged that issues first be put to discussion as a Github Issue in thi
 
 Anyone who wishes to form a Language Study Group to work towards a formal AI should submit a request through the official ARG [web-form](https://sites.google.com/view/ada-rapporteur-group/community-input?authuser=0).
 
-When a new Language Study Group is approved by the ARG, a Google Docs shed folder will be created. This folder should remain publicly readable, and should contain all working documents used by the Study Group to carry-out its work.
+When a new Language Study Group is approved by the ARG, a Google Docs shared folder will be created. This folder should remain publicly readable, and should contain all working documents used by the Study Group to carry-out its work.
 
 A list of active Study Groups can be found [here](https://sites.google.com/view/ada-rapporteur-group).
 
