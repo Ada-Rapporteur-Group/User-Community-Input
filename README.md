@@ -1,74 +1,67 @@
 # Ada User Community Input
 
-## What is Ada User Community Input?
+## The Ada Language
 
-The Ada User Community Input is a clearly defined process supported by appropriate infrastructure to facilitate Ada users from the community at-large to identify existing issues with the Ada Reference Manual, or to advocate new features for consideration by the ARG for possible inclusion to future revisions of the Ada language.
+Ada is a general-purpose programming language designed specifically for the development and long-term maintenance of reliable software.
 
-The UCI process defines a way for interested users to explore ideas, propose working groups, and collaborate on concrete language proposals that the ARG can formally deliberate on.
+Ada is used commonly in safety critical systems such as aerospace, air traffic control, rail, and industrial automation.
 
-## Is this repository the official home of UCI?
+Since the very beginning, the Ada language has been formally defined through a public standard. Originally as MIL-STD-1815, until it became international standard ISO/IEC 8652.
 
-Not exactly. This repository complements a more general [web-form](https://sites.google.com/view/ada-rapporteur-group) and set of associated Google Spreadsheets, which gives a maximally approachable path for the Ada Community. This repository is optimized for real-time community discussion, leveraging Github's Issues feature.
+## The Ada Rapporteur Group (ARG)
 
-The Ada UCI process is developed and maintained by a dedicated ARG working group that aims to design a process that is platform independent and transparent.
+ISO/IEC 8652 is officially maintained by ISO/IEC JTC 1/SC 22/WG 9. Comments from the general public are handled by WG 9's Ada Rapporteur Group (ARG). The ARG is responsible for addressing these comments, which often concern possible enhancements or errors in the Ada standard. The ARG considers these enhancements or errors for incorporation into future versions of the Ada standard.
 
-An alternate interface for those not familiar with github is also available at (link), where issues can be submitted directly, and working groups can be proposed.
+## A new way to engage the Ada user community
 
-## What is the Ada UCI Process?
+Historically the ada-comment mailing list has been used by members of the Ada community to identify problems or suggest enhancements.  
 
-The Ada UCI process applies to any given language change proposal that evolves through a three stage process.
+This repository, in conjunction with a new [website](https://sites.google.com/view/ada-rapporteur-group), has been created to simplify the process of providing Ada community input to the ARG, and to provide more visibility into the ARG process.
 
----
-### Stage I
+## An accessible medium for discussion
 
-All proposed change and ideas begin in Stage I. The idea is to make the proposal of languages changes and new features as easy as possible, with the lowest possible barrier. Stage I is about presenting ideas, seeking clarification (potentially interpretation), and discussing the merits and/or issues with those ideas among the community.
+This repository, when compared with the sister [website](https://sites.google.com/view/ada-rapporteur-group), is geared towards supporting real-time discussions on proposed features or changes to the Ada language through Github's Issues feature.
 
-Valid proposals Stage I submissions are really any coherent idea or question. This can be as small as a few sentences. The goal of Stage I is to have open debate and (initial) discussion about a given issue, and not about developing a specific, formal proposal.
+Active issues can be browsed and discussed with broad accessibility and transparency.
 
-Discussions of Stage I are open to all participants, and the discussion will remain visible to anyone.
 
-Moderators will monitor new issues for issues that have already been proposed at an earlier time, are in a working group, or have already been considered by the ARG. In such cases, moderators will make a reference to the relevant issue/WG/AI in the discussion. Moderators may also assign an an associated tag such as _Duplicate_, _In WG_ or _ARG Concluded_
+# Language Study Groups
 
-Stage I items are mirrored in Google Docs [here](https://temp.address/)
+Language Study Groups can be formed by the community to work transparently towards a formal proposal (Ada Interpretation/AI) for consideration by ISO/IEC JTC 1/SC 22/WG 9's Ada Rapporteur Group (ARG).
 
-**Instructions**
+It is encouraged that issues first be put to discussion as a Github Issue in this repository, to get feedback from the community, and possibly to identify any early issues, before forming a Study Group. 
 
-To propose a language change, bug fix, or new capability, simply create a standard issue on this repository.
+Anyone who wishes to form a Language Study Group to work towards a formal AI should submit a request through the official ARG [web-form](https://sites.google.com/view/ada-rapporteur-group/community-input?authuser=0).
 
-The title should give as concise a description as possible.
+When a new Language Study Group is approved by the ARG, a Google Docs shed folder will be created. This folder should remain publicly readable, and should contain all working documents used by the Study Group to carry-out its work.
 
-The issue should be given one of the following tags:
-* **Comment**: Issues/observations that the user does not necessarily have a proposal for. Comments generally will not progress to Stage II.
-* **Question**: A request for clarification or interpretation of an aspect of Ada or the Ada Reference Manual. If a binding interpretation becomes a goal, Questions may propose to an abbreviated Stage II for consideration by the ARG.
-* **Bug Report**: An issue with the current Ada Reference Manual
-* **Feature Request**: A proposal for a new language feature or capability (feature request)
+A list of active Study Groups can be found [here](https://sites.google.com/view/ada-rapporteur-group).
 
-Finally, a description should informally describe the comment, question, bug, or feature, including a very generalized (high-level).
-
-Alternatively, those not familiar with Github issues may use the [web form](https://sites.google.com/view/ada-rapporteur-group). Submissions to the webform will be synchronized as new issues in this repository (and vice-versa).
 
 ---
-### Stage II
+# How can I start?
 
-If a some number of members may coordinate with each other and propose to form a **working group** to formalize the proposal for consideration by the ARG as a formal ["AI"](https://link-about-ais.ada-auth.org/).
+The best way to get started is to browse open issues to get a sense of how issues are structured, and to see if you find any existing issues that interest you. Consider speaking with supporters within that discussion about proposing a Language Study Group to take the issue further.
 
-The Working Group takes on the issue stated in the proposal, and works towards the completion of a formal AI for consideration by the ARG.
+If there is an issue that you have not found discussed, please be welcome to open a new issue. Try to give it a concise title, a succinct description, and an appropriate tag.
 
-Working groups are responsible for coordinating amongst themselves to develop a a formal proposal (AI) for consideration by the ARG.
+# Ada Interpretations (AIs)
 
-**Instructions**
+The ARG performs most of its work in terms of Ada Interpretations (AIs), which are documents that describe an identified issue with the Ada Reference Manual, or which propose enhancements to the Ada programming language.  Such issues may be identified within the ARG itself, or may be identified by the wider Ada community.  Historically the ada-comment mailing list has been used by members of the Ada community to identify problems or suggest enhancements.  
 
-The first step in forming a working group is to create a shared Google Drive folder to contain all working materials of the working group. This folder must be publicly readable, and the link to that folder must be provided in the working group proposal. The working group can organize the content of this folder as they see fit.
+Language Study Groups work towards the development of an AI that can be submitted to the ARG for formal consideration.
 
-This information can then be submitted directly through the [web form](https://sites.google.com/view/ada-rapporteur-group).
+AIs that are being being active considered by the ARG will be posted in this repository in the AI format. This is great reference for language study groups to understand how AIs should be formed, and what they should contain.
 
-Alternatively, a pull request can be made for the addition of a markdown document conforming to the [Active Working Group Template](https://github.com/), to the Active Working Groups' subdirectory of this repository.
+As the ARG deliberates on open AIs, AIs will be updated with changes and additional discussion.
 
-Moderators will review requests for Working Groups to ensure there is no conflict with an existing working group or previous ARG decision. If the pull request is accepted, the working group becomes active.
+At the present time, AIs are being stored in the Rich Text Format, with an aim to eventually develop tooling to easily convert it into many formats. RTF was selected due to its maturity, stability, and generality. The ARG will continue to review the AI formats in the future.
 
----
-### Stage III
+An AI template can be found in the root of this repository.
 
-Once a working group completes their work, and develops a final AI documents for submission to the ARG, they should open a pull request that adds the AI as a Final Proposal following the [Final Proposals Template](https://github.com/)
+## Pull Requests
+
+Please do not make pull requests to this repository! AIs shall be submitted as the final steps of a Language Study Group. New AIs will be added to this repository by the ARG from time to time.
+
 
 
