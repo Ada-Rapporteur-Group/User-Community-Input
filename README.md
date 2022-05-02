@@ -16,11 +16,11 @@ ISO/IEC 8652 is officially maintained by ISO/IEC JTC 1/SC 22/WG 9. Comments from
 
 Historically the ada-comment mailing list has been used by members of the Ada community to identify problems or suggest enhancements.  
 
-This repository, in conjunction with a new [website](https://sites.google.com/view/ada-rapporteur-group), has been created to simplify the process of providing Ada community input to the ARG, and to provide more visibility into the ARG process.
+This repository, in conjunction with a new [website](https://arg.adaic.org/home), has been created to simplify the process of providing Ada community input to the ARG, and to provide more visibility into the ARG process.
 
 ## An accessible medium for discussion
 
-This repository, when compared with the sister [website](https://sites.google.com/view/ada-rapporteur-group), is geared towards supporting real-time discussions on proposed features or changes to the Ada language through Github's Issues feature.
+This repository, when compared with the sister [website](https://arg.adaic.org/home), is geared towards supporting real-time discussions on proposed features or changes to the Ada language through Github's Issues feature.
 
 Active issues can be browsed and discussed with broad accessibility and transparency.
 
@@ -31,11 +31,11 @@ Language Study Groups can be formed by the community to work transparently towar
 
 It is encouraged that issues first be put to discussion as a Github Issue in this repository, to get feedback from the community, and possibly to identify any early issues, before forming a Study Group. 
 
-Anyone who wishes to form a Language Study Group to work towards a formal AI should submit a request through the official ARG [web-form](https://sites.google.com/view/ada-rapporteur-group/community-input?authuser=0).
+Anyone who wishes to form a Language Study Group to work towards a formal AI should submit a request through the official ARG [web-form](https://arg.adaic.org/home/community-input?authuser=0).
 
 When a new Language Study Group is approved by the ARG, a Google Docs shared folder will be created. This folder should remain publicly readable, and should contain all working documents used by the Study Group to carry-out its work.
 
-A list of active Study Groups can be found [here](https://sites.google.com/view/ada-rapporteur-group).
+A list of active Study Groups can be found [here](https://arg.adaic.org/home).
 
 
 ---
