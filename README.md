@@ -31,7 +31,7 @@ Language Study Groups can be formed by the community to work transparently towar
 
 It is encouraged that issues first be put to discussion as a Github Issue in this repository, to get feedback from the community, and possibly to identify any early issues, before forming a Study Group. 
 
-Anyone who wishes to form a Language Study Group to work towards a formal AI should submit a request through the official ARG [web-form](https://arg.adaic.org/home/community-input?authuser=0).
+Anyone who wishes to form a Language Study Group to work towards a formal AI should submit a request through the official ARG [web-form](https://arg.adaic.org/community-input).
 
 When a new Language Study Group is approved by the ARG, a Google Docs shared folder will be created. This folder should remain publicly readable, and should contain all working documents used by the Study Group to carry-out its work.
 
