@@ -35,7 +35,7 @@ Anyone who wishes to form a Language Study Group to work towards a formal AI sho
 
 When a new Language Study Group is approved by the ARG, a Google Docs shared folder will be created. This folder should remain publicly readable, and should contain all working documents used by the Study Group to carry-out its work.
 
-A list of active Study Groups can be found [here](https://arg.adaic.org/home).
+A list of active Study Groups can be found [here](https://arg.adaic.org/community-input).
 
 
 ---
