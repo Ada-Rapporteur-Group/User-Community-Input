@@ -10,7 +10,7 @@ Since the very beginning, the Ada language has been formally defined through a p
 
 ## The Ada Rapporteur Group (ARG)
 
-ISO/IEC 8652 is officially maintained by ISO/IEC JTC 1/SC 22/WG 9. Comments from the general public are handled by WG 9's Ada Rapporteur Group (ARG). The ARG is responsible for addressing these comments, which often concern possible enhancements or errors in the Ada standard. The ARG considers these enhancements or errors for incorporation into future versions of the Ada standard.
+ISO/IEC 8652 is officially maintained by ISO/IEC JTC 1/SC 22/WG 9. Comments from the general public are handled by WG 9's Ada Rapporteur Group (ARG). The ARG is responsible for addressing these comments, which often concern possible enhancements or errors in the Ada standard. The ARG considers these enhancements or corrections of errors for incorporation into future versions of the Ada standard.
 
 ## Ada Interpretations (AIs)
 
@@ -22,9 +22,11 @@ AIs that are being or have been deliberated on by the ARG can be found [here](ht
 
 As the ARG deliberates on open AIs, AIs will be updated with changes and additional discussion, or may lead to the establishment of a Language Study Group if more intensive development work is required.
 
-At the present time, AIs are being stored in the Rich Text Format, with an aim to eventually develop tooling to easily convert it into many formats. RTF was selected due to its maturity, stability, and generality. The ARG will continue to review the AI formats in the future.
+At the present time, AIs are being stored and edited on Google Docs, which offers flexibility of export to various other formats as needed.
 
-An AI template can be found in the root of this repository.
+A guide to creating AIs can be found [here](http://www.ada-auth.org/ai-form.html).
+
+An AI template can be found [here](https://docs.google.com/document/d/1_7i2ipEx99hxq3hDHc8nqB_As2auw0QeLtut7XjMoHI/edit?usp=sharing).
 
 # A new way to engage the Ada user community
 
@@ -44,11 +46,11 @@ Active issues can be browsed and discussed with broad accessibility and transpar
 
 The best way to get started is to browse open issues to get a sense of how issues are structured, and to see if you find any existing issues that interest you. Consider speaking with supporters within that discussion about proposing a Language Study Group to take the issue further.
 
-If there is an issue that you have not found discussed, please feel welcome to open a new issue. Try to give it a concise title, a succinct description, and an appropriate tag.
+If there is a topic that you have not found discussed, please feel welcome to open a new issue. Try to give it a concise title, a succinct description, and an appropriate tag.
 
-If you find an issue is not gaining enough traction, or has received no comments after a month, considering "pinging" the issue generate notifications to anyone following the issue or the repository.
+If you find an issue is not gaining enough traction, or has received no comments after a month, consider "pinging" the issue to generate notifications to anyone following the issue or the repository.
 
-For issues that gain significant traction, it may be encouraged to propose the creation of a Language Study Group to develop the idea further, and ultimately into an AI. See the Language Study Groups section below.
+For issues that gain significant traction, you are encouraged to propose the creation of a Language Study Group to develop the idea further, and ultimately into a new AI. See the Language Study Groups section below.
 
 ## Direct Induction of Issues by the ARG
 
@@ -58,24 +60,24 @@ The ARG may, from time-to-time, decide to directly induct a community issue into
 
 If the ARG later finds that such an AI needs significant work, the ARG might vote that the AI requires the creation of a Language Study Group to proceed. At that point the original owner of the original issue is encouraged to lead that effort.
 
+Github Issues should be closed by ARG management (typically the Editor) as appropriate, and should not be closed by the creator of the issue, or by other ARG members.
+
 ## Language Study Groups
 
-Language Study Groups are created to transparently capture the work towards the generation and ongoing development of an AI to eventually be deliberated and voted on by the ARG.
+Language Study Groups are intended to transparently capture the work towards the creation and ongoing development of an AI to eventually be deliberated and voted on by the ARG.
 
 Language Study Groups can be created through two mechanisms. The first is by ARG vote to require a Language Study Group be created to further develop an existing AI. The second is by a direct proposal to form a Language Study Group, submitted to the ARG by an individual or group of the larger Ada community. 
 
-Language Study Groups proposed by the community must be approved by the ARG. Once approved, those proposing the creation of the study group can work towards the creation of a new AI for formal consideration by the ARG. Language Study Group proposals from the community should be for significant changes or new features that will require rigorous design and prototyping work. 
+Language Study Groups proposed by the community must be approved by the ARG. Once approved, those proposing the creation of the study group can work towards the creation of one or more new AIs for formal consideration by the ARG. Language Study Group proposals from the community should be for significant changes or new features that will require rigorous design and prototyping work. 
 
 Requests to form a new Language Study Group can be submitted through the official ARG [web-form](https://arg.adaic.org/community-input).
 
-It is generally encouraged that Language Study Groups be formed of group of interested individuals, but that is not a formal requirement.
+It is strongly encouraged that new ideas be put to as much community discussion as possible via a Github Issue (this repository) before proposing the formation of a new Language Study Group.
 
-It is strongly encouraged that new ideas be put to as much community discussion as possible via a Github Issues (this repository) before proposing the formation of a new Language Study Group.
-
-When a new Language Study Group is approved or required by the ARG, a Google Docs shared folder will be created. This folder should remain publicly readable, and should contain all working documents used by the Study Group to carry-out its work.
+When a new Language Study Group is approved or required by the ARG, a Google Drive shared folder will be created. This folder should remain publicly readable, and should contain all working documents used by the Study Group to carry-out its work.
 
 A list of active Study Groups can be found [here](https://arg.adaic.org/community-input).
 
 ## Pull Requests
 
-Please do not make pull requests to this repository! AIs shall be submitted as the final steps of a Language Study Group. New AIs will be added to this repository by the ARG from time to time.
+Please do not make pull requests to this repository! The purpose of this repository is to enable discussion via the Github Issues feature. Please refer to the [ARG website](arg.adaic.org) for a listing of all active AIs and Language Study Groups. The ARG editor may at some point in the future add AIs directly to this repository for greater accessibility.
