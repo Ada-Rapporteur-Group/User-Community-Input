@@ -80,4 +80,4 @@ A list of active Study Groups can be found [here](https://arg.adaic.org/communit
 
 ## Pull Requests
 
-Please do not make pull requests to this repository! The purpose of this repository is to enable discussion via the Github Issues feature. Please refer to the [ARG website](arg.adaic.org) for a listing of all active AIs and Language Study Groups. The ARG editor may at some point in the future add AIs directly to this repository for greater accessibility.
+Please do not make pull requests to this repository! The purpose of this repository is to enable discussion via the Github Issues feature. Please refer to the [ARG website](https://arg.adaic.org) for a listing of all active AIs and Language Study Groups. The ARG editor may at some point in the future add AIs directly to this repository for greater accessibility.
