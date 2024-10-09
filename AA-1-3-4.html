@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+    <TITLE>Runtime Actions</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <META NAME="Author" CONTENT="JTC1/SC22/WG9/ARG, by Randall Brukardt, ARG Editor">
+    <META NAME="GENERATOR" CONTENT="Arm_Form.Exe, Ada Reference Manual generator">
+    <STYLE type="text/css">
+    H4.centered {text-align: center}
+    SPAN.swiss {font-family: Arial, Helvetica, sans-serif; font-size: 92%}
+    SPAN.roman {font-family: "Times New Roman", Times, serif}
+    DIV.paranum {float: left; font-family: Arial, Helvetica, sans-serif; font-size: 64%; width: 2.8em; margin-left: -0.4em; margin-right: -3.0em; margin-top: 0.2em}
+    TT {font-family: "Courier New", monospace}
+    DT {display: compact}
+    A.Bar:link {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    A.Bar:visited {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    DIV.Annotations {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 6.8em; margin-bottom: 0.6em}
+    DIV.NarrowHanging-Body {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 3.8em; margin-top: 0em; margin-bottom: 0.6em}
+    DIV.NarrowHanging-Term {float: left; font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 1.8em; margin-top: 0em; margin-bottom: 0em}
+    </STYLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFF0" LINK="#000080" VLINK="#330033" ALINK="#0000FF">
+<DIV><SPAN Style="font-size:200%; color: rgb(0,51,153)"><B>Annotated</B></SPAN><SPAN Style="font-size:200%; color: rgb(0,0,102)"><B>&nbsp;Ada Reference Manual</B> (Ada 202y Draft 1)</SPAN> &mdash; <A HREF="AA-TTL.html"><B>Legal Information</B></A></DIV>
+<div style="margin-top: 0.6em; margin-bottom: 0.0em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-3.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-5.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<HR>
+<H1>1.3.4 Runtime Actions</H1>
+<div class="paranum"><a name="p1">1/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1267"></A><B>assertion</B></div><div class="NarrowHanging-Body"><br clear="left">
+boolean expression that is expected to be True at run time at certain 
+specified places</div>
+<div class="paranum"><a name="p2">2/5</a></div>
+<div class="Annotations">Note: Certain pragmas and aspects define various 
+kinds of assertions.</div>
+<div class="paranum"><a name="p3">3/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1268"></A><B>elaboration</B></div><div class="NarrowHanging-Body"><br clear="left">
+process by which a declaration achieves its run-time effect</div>
+<div class="paranum"><a name="p4">4/5</a></div>
+<div class="Annotations">Note: Elaboration is one of the forms of execution.</div>
+<div class="paranum"><a name="p5">5/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1269"></A><B>evaluation</B></div><div class="NarrowHanging-Body"><br clear="left">
+process by which an expression achieves its run-time effect</div>
+<div class="paranum"><a name="p6">6/5</a></div>
+<div class="Annotations">Note: Evaluation is one of the forms of execution.</div>
+<div class="paranum"><a name="p7">7/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1270"></A><B>execution</B></div><div class="NarrowHanging-Body"><br clear="left">
+process by which a construct achieves its run-time effect</div>
+<div class="paranum"><a name="p8">8/5</a></div>
+<div class="Annotations">Note: Execution of a declaration is also called 
+elaboration. Execution of an expression is also called evaluation.</div>
+<div class="paranum"><a name="p9">9/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1271"></A><B>logical thread 
+of control</B></div><div class="NarrowHanging-Body"><br clear="left">
+activity within the execution of a program that can proceed in parallel 
+with other activities of the same task, or of separate tasks</div>
+<div class="paranum"><a name="p10">10/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1272"></A><B>master</B></div><div class="NarrowHanging-Body"><br clear="left">
+execution of a master construct</div>
+<div class="paranum"><a name="p11">11/5</a></div>
+<div class="Annotations">Note: Each object and task is associated with 
+a master. When a master is left, associated tasks are awaited and associated 
+objects are finalized.</div>
+
+<HR>
+<div style="margin-top: 0.0em; margin-bottom: 0.6em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-3.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-5.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<DIV Style="margin-top:0.0em"><IMG SRC="AE_logo.gif" height=100 width=113 align=right ALT="Ada-Europe">
+<SPAN Style="vertical-align: middle; font-size:120%">Ada 2005 and 2012 Editions sponsored in part by <SPAN Style="font-size: 125%"><A HREF="http://www.ada-europe.org/"><B>Ada-Europe</B></A></SPAN></SPAN></DIV>
+</BODY>
+</HTML>

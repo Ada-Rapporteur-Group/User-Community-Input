@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+    <TITLE>Terms and Definitions</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <META NAME="Author" CONTENT="JTC1/SC22/WG9/ARG, by Randall Brukardt, ARG Editor">
+    <META NAME="GENERATOR" CONTENT="Arm_Form.Exe, Ada Reference Manual generator">
+    <STYLE type="text/css">
+    H4.centered {text-align: center}
+    SPAN.swiss {font-family: Arial, Helvetica, sans-serif; font-size: 92%}
+    SPAN.roman {font-family: "Times New Roman", Times, serif}
+    DIV.paranum {float: left; font-family: Arial, Helvetica, sans-serif; font-size: 64%; width: 2.8em; margin-left: -0.4em; margin-right: -3.0em; margin-top: 0.2em}
+    TT {font-family: "Courier New", monospace}
+    DT {display: compact}
+    A.Bar:link {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    A.Bar:visited {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    DIV.Normal {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 1.8em; margin-bottom: 0.6em}
+    DIV.Annotations {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 6.8em; margin-bottom: 0.6em}
+    </STYLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFF0" LINK="#000080" VLINK="#330033" ALINK="#0000FF">
+<DIV><SPAN Style="font-size:200%; color: rgb(0,51,153)"><B>Annotated</B></SPAN><SPAN Style="font-size:200%; color: rgb(0,0,102)"><B>&nbsp;Ada Reference Manual</B> (Ada 202y Draft 1)</SPAN> &mdash; <A HREF="AA-TTL.html"><B>Legal Information</B></A></DIV>
+<div style="margin-top: 0.6em; margin-bottom: 0.0em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-2-1.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-1.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<HR>
+<H1>1.3 Terms and Definitions</H1>
+<div class="paranum"><a name="p1">1/5</a></div>
+<div class="Normal">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AIs/AI-00415.TXT">AI95-00415-01</A></I>} 
+{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0443-1.TXT">AI12-0443-1</A></I>} 
+<A NAME="I1160"></A>Terms are defined throughout this document, indicated 
+by <I>italic</I> type. Terms explicitly defined in this document are 
+not to be presumed to refer implicitly to similar terms defined elsewhere. 
+Mathematical terms not defined in this document are to be interpreted 
+according to the <I>CRC Concise Encyclopedia of Mathematics, Second Edition</I>. 
+Other terms not defined in this document are to be interpreted according 
+to the <I>Webster's Third New International Dictionary of the English 
+Language</I>. Informal descriptions of some terms are also given below. 
+<A NAME="I1161"></A><A NAME="I1162"></A><A NAME="I1163"></A><A NAME="I1164"></A></div>
+<div class="paranum"><a name="p1.a">1.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>The index contains an entry 
+for every defined term.</div>
+<div class="paranum"><a name="p1.b">1.b/2</a></div>
+<div class="Annotations">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AIs/AI-00415.TXT">AI95-00415-01</A></I>} 
+The contents of the <I>CRC Concise Encyclopedia of Mathematics, Second 
+Edition</I> can be accessed on <A HREF="http://www.mathworld.com">http://www.mathworld.com</A>. 
+The ISBN number of the book is ISBN 1584883472.</div>
+<div class="paranum"><a name="p1.c">1.c/5</a></div>
+<div class="Annotations">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0443-1.TXT">AI12-0443-1</A></I>} 
+The definitions found in this subclause are short, descriptive definitions. 
+These are most useful for comprehension when an exact meaning is not 
+needed. More formal, detailed definitions are found in the body of the 
+Reference Manual; these are needed to determine the exact application 
+of rules to constructs and entities.</div>
+<div class="paranum"><a name="p1.d">1.d/5</a></div>
+<div class="Annotations">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0443-1.TXT">AI12-0443-1</A></I>} 
+To see the difference, consider &ldquo;aliased view&rdquo;. The descriptive 
+definition is &ldquo;a view of an object that can be designated by an 
+access value&rdquo;. The formal definition is a lengthy paragraph in 
+<A HREF="AA-3-10.html">3.10</A> that defines 10 separate constructs as 
+aliased views. In order to reason about a language rule that requires 
+an aliased view in a particular context, one needs to look at the list 
+of constructs in order to determine if the object in hand is actually 
+an aliased view. The descriptive definition is no help in this case. 
+</div>
+<div class="paranum"><a name="p1.e">1.e/5</a></div>
+<div class="Annotations"><B>Term entry:&nbsp;</B>{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0443-1.TXT">AI12-0443-1</A></I>} 
+Each term defined in this subclause is marked like this in the body of 
+the AARM near its detailed formal definition.&nbsp;</div>
+<div class="paranum"><a name="p1.f">1.f/5</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>Here are some AARM-only definitions: 
+<A NAME="I1165"></A><A NAME="I1166"></A>The Ada Rapporteur Group (ARG) 
+interprets the Ada Reference Manual. <A NAME="I1167"></A><A NAME="I1168"></A>An 
+Ada Issue (AI) is a numbered ruling from the ARG. Ada Issues created 
+for Ada 83 are denoted as &quot;AI83&quot;, while Ada Issues created 
+for Ada 95 are denoted as &quot;AI95&quot; in this document. Similarly, 
+Ada Issues created for Ada 2005 are denoted as &quot;AI05&quot;, Ada 
+Issues created for Ada 2012 are denoted as &quot;AI12&quot;, and Ada 
+Issues created for Ada 2022 are denoted as &quot;AI22&quot;. <A NAME="I1169"></A><A NAME="I1170"></A>The 
+Ada Commentary Integration Document (ACID) is an edition of the Ada 83 
+RM in which clearly marked insertions and deletions indicate the effect 
+of integrating the approved AIs. <A NAME="I1171"></A><A NAME="I1172"></A>The 
+Uniformity Rapporteur Group (URG) issued recommendations intended to 
+increase uniformity across Ada implementations. The functions of the 
+URG have been assumed by the ARG. <A NAME="I1173"></A><A NAME="I1174"></A>A 
+Uniformity Issue (UI) was a numbered recommendation from the URG. A Defect 
+Report and Response is an official query to WG9 about an error in the 
+standard. Defect Reports are processed by the ARG, and are referenced 
+here by their ISO numbers: 8652/nnnn. Most changes to the Ada 95 standard 
+include reference(s) to the Defect Report(s) that prompted the change. 
+<A NAME="I1175"></A><A NAME="I1176"></A><A NAME="I1177"></A><A NAME="I1178"></A>The 
+<I>Ada Conformity Assessment Test Suite (ACATS)</I> is a set of tests 
+intended to check the conformity of Ada implementations to this standard. 
+This set of tests was previously known as the Ada Compiler Validation 
+Capability (ACVC).&nbsp;</div>
+
+<HR>
+<div style="margin-top: 0.0em; margin-bottom: 0.6em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-2-1.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-1.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<DIV Style="margin-top:0.0em"><IMG SRC="AE_logo.gif" height=100 width=113 align=right ALT="Ada-Europe">
+<SPAN Style="vertical-align: middle; font-size:120%">Ada 2005 and 2012 Editions sponsored in part by <SPAN Style="font-size: 125%"><A HREF="http://www.ada-europe.org/"><B>Ada-Europe</B></A></SPAN></SPAN></DIV>
+</BODY>
+</HTML>

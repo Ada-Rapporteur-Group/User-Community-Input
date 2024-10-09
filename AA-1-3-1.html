@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+    <TITLE>Types, Objects, and their Properties</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <META NAME="Author" CONTENT="JTC1/SC22/WG9/ARG, by Randall Brukardt, ARG Editor">
+    <META NAME="GENERATOR" CONTENT="Arm_Form.Exe, Ada Reference Manual generator">
+    <STYLE type="text/css">
+    H4.centered {text-align: center}
+    SPAN.swiss {font-family: Arial, Helvetica, sans-serif; font-size: 92%}
+    SPAN.roman {font-family: "Times New Roman", Times, serif}
+    DIV.paranum {float: left; font-family: Arial, Helvetica, sans-serif; font-size: 64%; width: 2.8em; margin-left: -0.4em; margin-right: -3.0em; margin-top: 0.2em}
+    TT {font-family: "Courier New", monospace}
+    DT {display: compact}
+    A.Bar:link {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    A.Bar:visited {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    DIV.Annotations {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 6.8em; margin-bottom: 0.6em}
+    DIV.NarrowHanging-Body {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 3.8em; margin-top: 0em; margin-bottom: 0.6em}
+    DIV.NarrowHanging-Term {float: left; font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 1.8em; margin-top: 0em; margin-bottom: 0em}
+    </STYLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFF0" LINK="#000080" VLINK="#330033" ALINK="#0000FF">
+<DIV><SPAN Style="font-size:200%; color: rgb(0,51,153)"><B>Annotated</B></SPAN><SPAN Style="font-size:200%; color: rgb(0,0,102)"><B>&nbsp;Ada Reference Manual</B> (Ada 202y Draft 1)</SPAN> &mdash; <A HREF="AA-TTL.html"><B>Legal Information</B></A></DIV>
+<div style="margin-top: 0.6em; margin-bottom: 0.0em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-2.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<HR>
+<H1>1.3.1 Types, Objects, and their Properties</H1>
+<div class="paranum"><a name="p1">1/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1179"></A><B>abstract type</B></div><div class="NarrowHanging-Body"><br clear="left">
+tagged type intended for use as an ancestor of other types, but which 
+is not allowed to have objects of its own</div>
+<div class="paranum"><a name="p2">2/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1180"></A><B>access type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that has values that designate aliased objects</div>
+<div class="paranum"><a name="p3">3/5</a></div>
+<div class="Annotations">Note: Access types correspond to &ldquo;pointer 
+types&rdquo; or &ldquo;reference types&rdquo; in some other languages.</div>
+<div class="paranum"><a name="p4">4/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1181"></A><B>accessibility 
+level</B></div><div class="NarrowHanging-Body"><br clear="left">
+representation of the lifetime of an entity in terms of the level of 
+dynamic nesting within which the entity is known to exist</div>
+<div class="paranum"><a name="p5">5/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1182"></A><B>aliased view</B></div><div class="NarrowHanging-Body"><br clear="left">
+view of an object that can be designated by an access value</div>
+<div class="paranum"><a name="p6">6/5</a></div>
+<div class="Annotations">Note: Objects allocated by allocators are aliased. 
+Objects can also be explicitly declared as aliased with the reserved 
+word aliased. The Access attribute can be used to create an access value 
+designating an aliased object.</div>
+<div class="paranum"><a name="p7">7/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1183"></A><B>ancestor of a 
+type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type itself or, in the case of a type derived from other types, its parent 
+type or one of its progenitor types or one of their ancestors</div>
+<div class="paranum"><a name="p8">8/5</a></div>
+<div class="Annotations">Note: Ancestor and descendant are inverse relationships.</div>
+<div class="paranum"><a name="p9">9/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1184"></A><B>array type</B></div><div class="NarrowHanging-Body"><br clear="left">
+composite type whose components are all of the same type</div>
+<div class="paranum"><a name="p10">10/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1185"></A><B>aspect</B></div><div class="NarrowHanging-Body"><br clear="left">
+specifiable property of an entity</div>
+<div class="paranum"><a name="p11">11/5</a></div>
+<div class="Annotations">Note: An aspect can be specified by an <SPAN Class="swiss"><A HREF="AA-13-1-1.html#S0346">aspect_specification</A></SPAN> 
+on the declaration of the entity. Some aspects can be queried via attributes.</div>
+<div class="paranum"><a name="p12">12/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1186"></A><B>attribute</B></div><div class="NarrowHanging-Body"><br clear="left">
+characteristic or property of an entity that can be queried, and in some 
+cases specified</div>
+<div class="paranum"><a name="p13">13/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1187"></A><B>category of types</B></div><div class="NarrowHanging-Body"><br clear="left">
+set of types with one or more common properties, such as primitive operations</div>
+<div class="paranum"><a name="p14">14/5</a></div>
+<div class="Annotations">Note: A category of types that is closed under 
+derivation is also known as a class.</div>
+<div class="paranum"><a name="p15">15/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1188"></A><B>character type</B></div><div class="NarrowHanging-Body"><br clear="left">
+enumeration type whose values include characters</div>
+<div class="paranum"><a name="p16">16/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1189"></A><B>class of types</B></div><div class="NarrowHanging-Body"><br clear="left">
+set of types that is <A NAME="I1190"></A>closed under derivation, which 
+means that if a given type is in the class, then all types derived from 
+that type are also in the class</div>
+<div class="paranum"><a name="p17">17/5</a></div>
+<div class="Annotations">Note: The set of types of a class share common 
+properties, such as their primitive operations.</div>
+<div class="paranum"><a name="p18">18/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1191"></A><B>composite type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type with components, such as an array or record</div>
+<div class="paranum"><a name="p19">19/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1192"></A><B>controlled type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that supports user-defined assignment and finalization</div>
+<div class="paranum"><a name="p20">20/5</a></div>
+<div class="Annotations">Note: Objects are always finalized before being 
+destroyed.</div>
+<div class="paranum"><a name="p21">21/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1193"></A><B>default initial 
+condition</B></div><div class="NarrowHanging-Body"><br clear="left">
+property that holds for every default-initialized object of a given type</div>
+<div class="paranum"><a name="p22">22/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1194"></A><B>derived type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type defined in terms of a parent type and zero or more progenitor types 
+given in a derived type definition</div>
+<div class="paranum"><a name="p23">23/5</a></div>
+<div class="Annotations">Note 1: A derived type inherits properties such 
+as components and primitive operations from its parent and progenitors.</div>
+<div class="paranum"><a name="p24">24/5</a></div>
+<div class="Annotations">Note 2: A type together with the types derived 
+from it (directly or indirectly) form a derivation class.</div>
+<div class="paranum"><a name="p25">25/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1195"></A><B>descendant of 
+a type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type itself or a type derived (directly or indirectly) from it</div>
+<div class="paranum"><a name="p26">26/5</a></div>
+<div class="Annotations">Note: Descendant and ancestor are inverse relationships.</div>
+<div class="paranum"><a name="p27">27/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1196"></A><B>discrete type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that is either an integer type or an enumeration type</div>
+<div class="paranum"><a name="p28">28/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1197"></A><B>discriminant</B></div><div class="NarrowHanging-Body"><br clear="left">
+parameter for a composite type, which can control, for example, the bounds 
+of a component that is an array</div>
+<div class="paranum"><a name="p29">29/5</a></div>
+<div class="Annotations">Note: A discriminant for a task type can be 
+used to pass data to a task of the type upon its creation.</div>
+<div class="paranum"><a name="p30">30/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1198"></A><B>elementary type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that does not have components</div>
+<div class="paranum"><a name="p31">31/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1199"></A><B>enumeration type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type defined by an enumeration of its values, which can be denoted by 
+identifiers or character literals</div>
+<div class="paranum"><a name="p32">32/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1200"></A><B>full type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that defines a full view</div>
+<div class="paranum"><a name="p33">33/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1201"></A><B>full view</B></div><div class="NarrowHanging-Body"><br clear="left">
+view of a type that reveals all of its properties</div>
+<div class="paranum"><a name="p34">34/5</a></div>
+<div class="Annotations">Note: There can be other views of the type that 
+reveal fewer properties.</div>
+<div class="paranum"><a name="p35">35/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1202"></A><B>incomplete type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that defines an incomplete view</div>
+<div class="paranum"><a name="p36">36/5</a></div>
+<div class="Annotations">Note: Incomplete types can be used for defining 
+recursive data structures.</div>
+<div class="paranum"><a name="p37">37/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1203"></A><B>incomplete view</B></div><div class="NarrowHanging-Body"><br clear="left">
+view of a type that reveals minimal properties</div>
+<div class="paranum"><a name="p38">38/5</a></div>
+<div class="Annotations">Note: The remaining properties are defined by 
+the full view given elsewhere.</div>
+<div class="paranum"><a name="p39">39/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1204"></A><B>indexable container 
+type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that has user-defined behavior for indexing, via the Constant_Indexing 
+or Variable_Indexing aspects</div>
+<div class="paranum"><a name="p40">40/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1205"></A><B>integer type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that represents signed or modular integers</div>
+<div class="paranum"><a name="p41">41/5</a></div>
+<div class="Annotations">Note: A signed integer type has a base range 
+that includes both positive and negative numbers, and has operations 
+that can raise an exception when the result is outside the base range. 
+A modular type has a base range whose lower bound is zero, and has operations 
+with &ldquo;wraparound&rdquo; semantics. Modular types subsume what are 
+called &ldquo;unsigned types&rdquo; in some other languages.</div>
+<div class="paranum"><a name="p42">42/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1206"></A><B>interface type</B></div><div class="NarrowHanging-Body"><br clear="left">
+abstract tagged type that has no components or concrete operations except 
+possibly null procedures</div>
+<div class="paranum"><a name="p43">43/5</a></div>
+<div class="Annotations">Note: Interface types are used for composing 
+other interfaces and tagged types and thereby provide multiple inheritance. 
+Only an interface type can be used as a progenitor of another type.</div>
+<div class="paranum"><a name="p44">44/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1207"></A><B>invariant</B></div><div class="NarrowHanging-Body"><br clear="left">
+assertion that is expected to be True for all objects of a given private 
+type when viewed from outside the defining package</div>
+<div class="paranum"><a name="p45">45/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1208"></A><B>iterable container 
+type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that has user-defined behavior for iteration, via the Default_Iterator 
+and Iterator_Element aspects</div>
+<div class="paranum"><a name="p46">46/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1209"></A><B>limited type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type for which copying (such as in an <SPAN Class="swiss"><A HREF="AA-5-2.html#S0173">assignment_statement</A></SPAN>) 
+is not allowed</div>
+<div class="paranum"><a name="p47">47/5</a></div>
+<div class="Annotations">Note: All types are either limited types or 
+nonlimited types.</div>
+<div class="paranum"><a name="p48">48/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1210"></A><B>needed component</B></div><div class="NarrowHanging-Body"><br clear="left">
+component of a record type or record extension that is required to have 
+its value specified within a given aggregate</div>
+<div class="paranum"><a name="p49">49/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1211"></A><B>nominal subtype</B></div><div class="NarrowHanging-Body"><br clear="left">
+subtype specified when a view of an object is defined</div>
+<div class="paranum"><a name="p50">50/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1212"></A><B>nonlimited type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type for which copying is allowed</div>
+<div class="paranum"><a name="p51">51/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1213"></A><B>object</B></div><div class="NarrowHanging-Body"><br clear="left">
+entity that contains a value, and is either a constant or a variable</div>
+<div class="paranum"><a name="p52">52/5</a></div>
+<div class="Annotations">Note: An object is created by an <SPAN Class="swiss"><A HREF="AA-3-3-1.html#S0032">object_declaration</A></SPAN> 
+or by an <SPAN Class="swiss"><A HREF="AA-4-8.html#S0164">allocator</A></SPAN>. 
+A formal parameter is (a view of) an object. A subcomponent of an object 
+is an object.</div>
+<div class="paranum"><a name="p53">53/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1214"></A><B>operational aspect</B></div><div class="NarrowHanging-Body"><br clear="left">
+aspect that indicates a logical property of an entity, such as the precondition 
+of a subprogram, or the procedure used to write a given type of object 
+to a stream</div>
+<div class="paranum"><a name="p54">54/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1215"></A><B>parent of a derived 
+type</B></div><div class="NarrowHanging-Body"><br clear="left">
+first ancestor type given in the definition of the derived type</div>
+<div class="paranum"><a name="p55">55/5</a></div>
+<div class="Annotations">Note: The parent can be almost any kind of type, 
+including an interface type.</div>
+<div class="paranum"><a name="p56">56/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1216"></A><B>partial view</B></div><div class="NarrowHanging-Body"><br clear="left">
+view of a type that reveals only some of its properties</div>
+<div class="paranum"><a name="p57">57/5</a></div>
+<div class="Annotations">Note: The remaining properties are defined by 
+the full view given elsewhere.</div>
+<div class="paranum"><a name="p58">58/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1217"></A><B>primitive operations 
+of a type</B></div><div class="NarrowHanging-Body"><br clear="left">
+operations (such as subprograms) declared together with the type declarations</div>
+<div class="paranum"><a name="p59">59/5</a></div>
+<div class="Annotations">Note: Primitive operations are inherited by 
+other types in the same derivation class of types.</div>
+<div class="paranum"><a name="p60">60/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1218"></A><B>private extension</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that extends another type, with the additional properties hidden 
+from its clients</div>
+<div class="paranum"><a name="p61">61/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1219"></A><B>private type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that defines a partial view</div>
+<div class="paranum"><a name="p62">62/5</a></div>
+<div class="Annotations">Note: Private types can be used for defining 
+abstractions that hide unnecessary details from their clients.</div>
+<div class="paranum"><a name="p63">63/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1220"></A><B>progenitor</B></div><div class="NarrowHanging-Body"><br clear="left">
+type given in the interface list, if any, of an interface, task, protected, 
+or derived type definition</div>
+<div class="paranum"><a name="p64">64/5</a></div>
+<div class="Annotations">Note: A progenitor is always an interface type.</div>
+<div class="paranum"><a name="p65">65/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1221"></A><B>protected type</B></div><div class="NarrowHanging-Body"><br clear="left">
+composite type whose components are accessible only through one of its 
+protected operations, which synchronize concurrent access by multiple 
+tasks</div>
+<div class="paranum"><a name="p66">66/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1222"></A><B>real type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that has values that are approximations of the real numbers</div>
+<div class="paranum"><a name="p67">67/5</a></div>
+<div class="Annotations">Note: Floating point and fixed point types are 
+real types.</div>
+<div class="paranum"><a name="p68">68/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1223"></A><B>record extension</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that extends another type optionally with additional components</div>
+<div class="paranum"><a name="p69">69/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1224"></A><B>record type</B></div><div class="NarrowHanging-Body"><br clear="left">
+composite type consisting of zero or more named components, possibly 
+of different types</div>
+<div class="paranum"><a name="p70">70/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1225"></A><B>reference type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type that has user-defined behavior for &ldquo;.all&rdquo;, defined by 
+the Implicit_Dereference aspect</div>
+<div class="paranum"><a name="p71">71/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1226"></A><B>representation 
+aspect</B></div><div class="NarrowHanging-Body"><br clear="left">
+aspect that indicates how an entity is mapped onto the underlying hardware, 
+for example the size or alignment of an object</div>
+<div class="paranum"><a name="p72">72/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1227"></A><B>scalar type</B></div><div class="NarrowHanging-Body"><br clear="left">
+either a discrete type or a real type</div>
+<div class="paranum"><a name="p73">73/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1228"></A><B>stable property</B></div><div class="NarrowHanging-Body"><br clear="left">
+characteristic associated with objects of a given type that is preserved 
+by many of the primitive operations of the type</div>
+<div class="paranum"><a name="p74">74/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1229"></A><B>storage pool object</B></div><div class="NarrowHanging-Body"><br clear="left">
+object associated with one or more access types from which the storage 
+for objects created by allocators of the access type(s) is obtained</div>
+<div class="paranum"><a name="p75">75/5</a></div>
+<div class="Annotations">Note: Some storage pools can be partitioned 
+into subpools in order to support finer-grained storage management.</div>
+<div class="paranum"><a name="p76">76/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1230"></A><B>stream</B></div><div class="NarrowHanging-Body"><br clear="left">
+sequence of elements that can be used, along with the stream-oriented 
+attributes, to support marshalling and unmarshalling of values of most 
+types</div>
+<div class="paranum"><a name="p77">77/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1231"></A><B>subtype</B></div><div class="NarrowHanging-Body"><br clear="left">
+type together with optional constraints, null exclusions, and predicates, 
+which constrain the values of the type to the subset that satisfies the 
+implied conditions</div>
+<div class="paranum"><a name="p78">78/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1232"></A><B>synchronized</B></div><div class="NarrowHanging-Body"><br clear="left">
+can be safely operated on by multiple tasks concurrently</div>
+<div class="paranum"><a name="p79">79/5</a></div>
+<div class="Annotations">Note: Synchronized is used to qualify entities, 
+as in a synchronized interface.</div>
+<div class="paranum"><a name="p80">80/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1233"></A><B>tagged type</B></div><div class="NarrowHanging-Body"><br clear="left">
+type whose objects each have a run-time type tag, which indicates the 
+specific type for which the object was originally created</div>
+<div class="paranum"><a name="p81">81/5</a></div>
+<div class="Annotations">Note: Tagged types can be extended with additional 
+components.</div>
+<div class="paranum"><a name="p82">82/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1234"></A><B>task type</B></div><div class="NarrowHanging-Body"><br clear="left">
+composite type used to represent active entities which execute concurrently 
+and that can communicate via queued task entries</div>
+<div class="paranum"><a name="p83">83/5</a></div>
+<div class="Annotations">Note: The top-level task of a partition is called 
+the environment task.</div>
+<div class="paranum"><a name="p84">84/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1235"></A><B>type</B></div><div class="NarrowHanging-Body">
+defining characteristic of each object and expression of the language, 
+with an associated set of values, and a set of primitive operations that 
+implement the fundamental aspects of its semantics</div>
+<div class="paranum"><a name="p85">85/5</a></div>
+<div class="Annotations">Note: Types are grouped into categories. Most 
+language-defined categories of types are also classes of types.</div>
+<div class="paranum"><a name="p86">86/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1236"></A><B>view of an entity</B></div><div class="NarrowHanging-Body"><br clear="left">
+representation of an entity that reveals some or all of the properties 
+of the entity</div>
+<div class="paranum"><a name="p87">87/5</a></div>
+<div class="Annotations">Note: A single entity can have multiple views.</div>
+
+<HR>
+<div style="margin-top: 0.0em; margin-bottom: 0.6em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-2.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<DIV Style="margin-top:0.0em"><IMG SRC="AE_logo.gif" height=100 width=113 align=right ALT="Ada-Europe">
+<SPAN Style="vertical-align: middle; font-size:120%">Ada 2005 and 2012 Editions sponsored in part by <SPAN Style="font-size: 125%"><A HREF="http://www.ada-europe.org/"><B>Ada-Europe</B></A></SPAN></SPAN></DIV>
+</BODY>
+</HTML>

@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+    <TITLE>General</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <META NAME="Author" CONTENT="JTC1/SC22/WG9/ARG, by Randall Brukardt, ARG Editor">
+    <META NAME="GENERATOR" CONTENT="Arm_Form.Exe, Ada Reference Manual generator">
+    <STYLE type="text/css">
+    H4.centered {text-align: center}
+    SPAN.swiss {font-family: Arial, Helvetica, sans-serif; font-size: 92%}
+    SPAN.roman {font-family: "Times New Roman", Times, serif}
+    DIV.paranum {float: left; font-family: Arial, Helvetica, sans-serif; font-size: 64%; width: 2.8em; margin-left: -0.4em; margin-right: -3.0em; margin-top: 0.2em}
+    TT {font-family: "Courier New", monospace}
+    DT {display: compact}
+    SPAN.insert6 {text-decoration: underline; color: rgb(0,51,204) }
+    SPAN.delete6 {text-decoration: line-through; color: rgb(0,51,204) }
+    A.Bar:link {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    A.Bar:visited {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    DIV.Annotations {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 6.8em; margin-bottom: 0.6em}
+    DIV.SmallBulleted-NoPrefix {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 9.3em; margin-right: 2.5em; margin-top: 0em; margin-bottom: 0.5em}
+    DIV.SmallBulleted {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 9.3em; margin-right: 2.5em; margin-top: 0em; margin-bottom: 0.5em; display: list-item; list-style-type: disc}
+    DIV.Indented4SmallNestedBulleted-NoPrefix {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left:  11.8em; margin-right: 2.5em; margin-top: 0em; margin-bottom: 0.5em}
+    DIV.Indented4SmallNestedBulleted {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left:  11.8em; margin-right: 2.5em; margin-top: 0em; margin-bottom: 0.5em; display: list-item; list-style-type: disc}
+    </STYLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFF0" LINK="#000080" VLINK="#330033" ALINK="#0000FF">
+<DIV><SPAN Style="font-size:200%; color: rgb(0,51,153)"><B>Annotated</B></SPAN><SPAN Style="font-size:200%; color: rgb(0,0,102)"><B>&nbsp;Ada Reference Manual</B> (Ada 202y Draft 1)</SPAN> &mdash; <A HREF="AA-TTL.html"><B>Legal Information</B></A></DIV>
+<div style="margin-top: 0.6em; margin-bottom: 0.0em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-2.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<HR>
+<H1>1 &nbsp; General</H1>
+<div class="paranum"><a name="p2.a">2.a/6</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>This Annotated Ada Reference 
+Manual (AARM) contains the entire text of the fourth edition of the Ada 
+Reference Manual <span class="insert6">as updated for Ada 202y&nbsp;</span>(referred 
+to here as the Ada <span class="insert6">202y</span><span class="delete6">&nbsp;2022</span> 
+RM), plus certain annotations. The annotations give a more in-depth analysis 
+of the language. They describe the reason for each nonobvious rule, and 
+point out interesting ramifications of the rules and interactions among 
+the rules (interesting to language lawyers, that is). Differences between 
+Ada 83, Ada 95, Ada 2005, Ada 2012, <span class="insert6">Ada 2022, and 
+Ada 202y</span><span class="delete6">&nbsp;and Ada 2022</span> are listed. 
+(The text you are reading now is an annotation.)</div>
+<div class="paranum"><a name="p2.b">2.b/3</a></div>
+<div class="Annotations">The AARM stresses detailed correctness and uniformity 
+over readability and understandability. We're not trying to make the 
+language &ldquo;appear&rdquo; simple here; on the contrary, we're trying 
+to expose hidden complexities, so we can more easily detect language 
+bugs. The Ada <span class="insert6">202y</span><span class="delete6">&nbsp;2022</span> 
+RM, on the other hand, is intended to be a more readable document for 
+programmers.</div>
+<div class="paranum"><a name="p2.c">2.c</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em">The annotations 
+in the AARM are as follows:&nbsp;</div>
+<div class="paranum"><a name="p2.d">2.d/3</a></div>
+<div class="SmallBulleted">Text that is logically redundant is shown 
+[in square brackets, like this]. Technically, such text could be written 
+as a Note in the Ada <span class="insert6">202y</span><span class="delete6">&nbsp;2022</span> 
+RM (and the Ada 95 and 2005 RMs before it), since it is really a theorem 
+that can be proven from the nonredundant rules of the language. We use 
+the square brackets instead when it seems to make the Ada <span class="insert6">202y</span><span class="delete6">&nbsp;2022</span> 
+RM more readable.</div>
+<div class="paranum"><a name="p2.e">2.e</a></div>
+<div class="SmallBulleted">The rules of the language (and some AARM-only 
+text) are categorized, and placed under certain <I>sub-headings</I> that 
+indicate the category. For example, the distinction between Name Resolution 
+Rules and Legality Rules is particularly important, as explained in <A HREF="AA-8-6.html">8.6</A>.</div>
+<div class="paranum"><a name="p2.f">2.f</a></div>
+<div class="SmallBulleted">Text under the following sub-headings appears 
+in both documents:&nbsp;</div>
+<div class="paranum"><a name="p2.g">2.g</a></div>
+<div class="Indented4SmallNestedBulleted">The unlabeled text at the beginning 
+of each clause or subclause,</div>
+<div class="paranum"><a name="p2.h">2.h</a></div>
+<div class="Indented4SmallNestedBulleted">Syntax,</div>
+<div class="paranum"><a name="p2.i">2.i</a></div>
+<div class="Indented4SmallNestedBulleted">Name Resolution Rules,</div>
+<div class="paranum"><a name="p2.j">2.j</a></div>
+<div class="Indented4SmallNestedBulleted">Legality Rules,</div>
+<div class="paranum"><a name="p2.k">2.k</a></div>
+<div class="Indented4SmallNestedBulleted">Static Semantics,</div>
+<div class="paranum"><a name="p2.l">2.l</a></div>
+<div class="Indented4SmallNestedBulleted">Post-Compilation Rules,</div>
+<div class="paranum"><a name="p2.m">2.m</a></div>
+<div class="Indented4SmallNestedBulleted">Dynamic Semantics,</div>
+<div class="paranum"><a name="p2.n">2.n</a></div>
+<div class="Indented4SmallNestedBulleted">Bounded (Run-Time) Errors,</div>
+<div class="paranum"><a name="p2.o">2.o</a></div>
+<div class="Indented4SmallNestedBulleted">Erroneous Execution,</div>
+<div class="paranum"><a name="p2.p">2.p</a></div>
+<div class="Indented4SmallNestedBulleted">Implementation Requirements,</div>
+<div class="paranum"><a name="p2.q">2.q</a></div>
+<div class="Indented4SmallNestedBulleted">Documentation Requirements,</div>
+<div class="paranum"><a name="p2.r">2.r</a></div>
+<div class="Indented4SmallNestedBulleted">Metrics,</div>
+<div class="paranum"><a name="p2.s">2.s</a></div>
+<div class="Indented4SmallNestedBulleted">Implementation Permissions,</div>
+<div class="paranum"><a name="p2.t">2.t</a></div>
+<div class="Indented4SmallNestedBulleted">Implementation Advice,</div>
+<div class="paranum"><a name="p2.t.1">2.t.1/6</a></div>
+<div class="Indented4SmallNestedBulleted"><span class="insert6">Usage.</span></div>
+<div class="paranum"><a name="p2.u">2.u</a></div>
+<div class="Indented4SmallNestedBulleted">NOTES,</div>
+<div class="paranum"><a name="p2.v">2.v</a></div>
+<div class="Indented4SmallNestedBulleted">Examples.&nbsp;</div>
+<div class="paranum"><a name="p2.w">2.w/3</a></div>
+<div class="SmallBulleted">Text under the following sub-headings does 
+not appear in the Ada <span class="insert6">202y</span><span class="delete6">&nbsp;2022</span> 
+RM:&nbsp;</div>
+<div class="paranum"><a name="p2.x">2.x</a></div>
+<div class="Indented4SmallNestedBulleted">Language Design Principles,</div>
+<div class="paranum"><a name="p2.y">2.y</a></div>
+<div class="Indented4SmallNestedBulleted">Inconsistencies With Ada 83,</div>
+<div class="paranum"><a name="p2.z">2.z</a></div>
+<div class="Indented4SmallNestedBulleted">Incompatibilities With Ada 
+83,</div>
+<div class="paranum"><a name="p2.aa">2.aa</a></div>
+<div class="Indented4SmallNestedBulleted">Extensions to Ada 83,</div>
+<div class="paranum"><a name="p2.bb">2.bb/2</a></div>
+<div class="Indented4SmallNestedBulleted">Wording Changes from Ada 83,</div>
+<div class="paranum"><a name="p2.bb.1">2.bb.1/2</a></div>
+<div class="Indented4SmallNestedBulleted">Inconsistencies With Ada 95,</div>
+<div class="paranum"><a name="p2.bb.2">2.bb.2/2</a></div>
+<div class="Indented4SmallNestedBulleted">Incompatibilities With Ada 
+95,</div>
+<div class="paranum"><a name="p2.bb.3">2.bb.3/2</a></div>
+<div class="Indented4SmallNestedBulleted">Extensions to Ada 95,</div>
+<div class="paranum"><a name="p2.bb.4">2.bb.4/3</a></div>
+<div class="Indented4SmallNestedBulleted">Wording Changes from Ada 95,</div>
+<div class="paranum"><a name="p2.bb.5">2.bb.5/3</a></div>
+<div class="Indented4SmallNestedBulleted">Inconsistencies With Ada 2005,</div>
+<div class="paranum"><a name="p2.bb.6">2.bb.6/3</a></div>
+<div class="Indented4SmallNestedBulleted">Incompatibilities With Ada 
+2005,</div>
+<div class="paranum"><a name="p2.bb.7">2.bb.7/3</a></div>
+<div class="Indented4SmallNestedBulleted">Extensions to Ada 2005,</div>
+<div class="paranum"><a name="p2.bb.8">2.bb.8/4</a></div>
+<div class="Indented4SmallNestedBulleted">Wording Changes from Ada 2005,</div>
+<div class="paranum"><a name="p2.bb.9">2.bb.9/4</a></div>
+<div class="Indented4SmallNestedBulleted">Inconsistencies With Ada 2012,</div>
+<div class="paranum"><a name="p2.bb.10">2.bb.10/4</a></div>
+<div class="Indented4SmallNestedBulleted">Incompatibilities With Ada 
+2012,</div>
+<div class="paranum"><a name="p2.bb.11">2.bb.11/4</a></div>
+<div class="Indented4SmallNestedBulleted">Extensions to Ada 2012,</div>
+<div class="paranum"><a name="p2.bb.12">2.bb.12/4</a></div>
+<div class="Indented4SmallNestedBulleted">Wording Changes from Ada 2012.</div>
+<div class="paranum"><a name="p2.bb.13">2.bb.13/6</a></div>
+<div class="Indented4SmallNestedBulleted"><span class="insert6">Inconsistencies 
+With Ada 2022,</span></div>
+<div class="paranum"><a name="p2.bb.14">2.bb.14/6</a></div>
+<div class="Indented4SmallNestedBulleted"><span class="insert6">Incompatibilities 
+With Ada 2022,</span></div>
+<div class="paranum"><a name="p2.bb.15">2.bb.15/6</a></div>
+<div class="Indented4SmallNestedBulleted"><span class="insert6">Extensions 
+to Ada 2022,</span></div>
+<div class="paranum"><a name="p2.bb.16">2.bb.16/6</a></div>
+<div class="Indented4SmallNestedBulleted"><span class="insert6">Wording 
+Changes from Ada 2022.</span>&nbsp;</div>
+<div class="paranum"><a name="p2.cc">2.cc</a></div>
+<div class="SmallBulleted">The AARM also includes the following kinds 
+of annotations. These do not necessarily annotate the immediately preceding 
+rule, although they often do.&nbsp;</div>
+<div class="paranum"><a name="p2.dd">2.dd</a></div>
+<div class="Annotations"><B>Reason:&nbsp;</B>An explanation of why a certain 
+rule is necessary, or why it is worded in a certain way.&nbsp;</div>
+<div class="paranum"><a name="p2.ee">2.ee</a></div>
+<div class="Annotations"><B>Ramification:&nbsp;</B>An obscure ramification 
+of the rules that is of interest only to language lawyers. (If a ramification 
+of the rules is of interest to programmers, then it appears under NOTES.) 
+</div>
+<div class="paranum"><a name="p2.ff">2.ff</a></div>
+<div class="Annotations"><B>Proof:&nbsp;</B>An informal proof explaining how 
+a given Note or [marked-as-redundant] piece of text follows from the 
+other rules of the language.&nbsp;</div>
+<div class="paranum"><a name="p2.gg">2.gg</a></div>
+<div class="Annotations"><B>Implementation Note:&nbsp;</B>A hint about how 
+to implement a feature, or a particular potential pitfall that an implementer 
+needs to be aware of.</div>
+<div class="paranum"><a name="p2.hh">2.hh</a></div>
+<div class="Annotations"><B>Change:</B> Change annotations are not used 
+in this version. Changes from previous versions have been removed. Changes 
+in this version are marked with versioned paragraph numbers, as explained 
+in the &ldquo;Corrigendum Changes&rdquo; clause of the &ldquo;Introduction&rdquo;. 
+</div>
+<div class="paranum"><a name="p2.ii">2.ii</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>Other annotations not covered 
+by the above.&nbsp;</div>
+<div class="paranum"><a name="p2.jj">2.jj</a></div>
+<div class="Annotations"><B>To be honest:&nbsp;</B>A rule that is considered 
+logically necessary to the definition of the language, but which is so 
+obscure or pedantic that only a language lawyer would care. These are 
+the only annotations that could be considered part of the language definition. 
+</div>
+<div class="paranum"><a name="p2.jj.1">2.jj.1/5</a></div>
+<div class="Annotations"><B>Term entry:&nbsp;</B>{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0443-1.TXT">AI12-0443-1</A></I>} 
+The text of a Term and Definition entry &mdash; this text will also appear 
+in <A HREF="AA-1-3.html">1.3</A>, &ldquo;<A HREF="AA-1-3.html">Terms 
+and Definitions</A>&rdquo;.&nbsp;</div>
+<div class="paranum"><a name="p2.kk">2.kk/3</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>In general, the Ada <span class="insert6">202y</span><span class="delete6">&nbsp;2022</span> 
+RM text appears in the normal font, whereas AARM-only text appears in 
+a smaller font. Notes also appear in the smaller font, as recommended 
+by ISO/IEC style guidelines. Ada examples are also usually printed in 
+a smaller font.</div>
+<div class="paranum"><a name="p2.ll">2.ll</a></div>
+<div class="Annotations">If you have trouble finding things, be sure 
+to use the index. <A NAME="I1003"></A>Each defined term appears there, 
+and also in <I>italics, like this</I>. Syntactic categories defined in 
+BNF are also indexed.</div>
+<div class="paranum"><a name="p2.mm">2.mm</a></div>
+<div class="Annotations">A definition marked &ldquo;[distributed]&rdquo; 
+is the main definition for a term whose complete definition is given 
+in pieces distributed throughout the document. The pieces are marked 
+&ldquo;[partial]&rdquo; or with a phrase explaining what cases the partial 
+definition applies to.&nbsp;</div>
+
+<HR>
+<div style="margin-top: 0.0em; margin-bottom: 0.6em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-2.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<DIV Style="margin-top:0.0em"><IMG SRC="AE_logo.gif" height=100 width=113 align=right ALT="Ada-Europe">
+<SPAN Style="vertical-align: middle; font-size:120%">Ada 2005 and 2012 Editions sponsored in part by <SPAN Style="font-size: 125%"><A HREF="http://www.ada-europe.org/"><B>Ada-Europe</B></A></SPAN></SPAN></DIV>
+</BODY>
+</HTML>

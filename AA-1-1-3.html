@@ -1,0 +1,393 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+    <TITLE>Conformity of an Implementation</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <META NAME="Author" CONTENT="JTC1/SC22/WG9/ARG, by Randall Brukardt, ARG Editor">
+    <META NAME="GENERATOR" CONTENT="Arm_Form.Exe, Ada Reference Manual generator">
+    <STYLE type="text/css">
+    H4.centered {text-align: center}
+    SPAN.swiss {font-family: Arial, Helvetica, sans-serif; font-size: 92%}
+    SPAN.roman {font-family: "Times New Roman", Times, serif}
+    DIV.paranum {float: left; font-family: Arial, Helvetica, sans-serif; font-size: 64%; width: 2.8em; margin-left: -0.4em; margin-right: -3.0em; margin-top: 0.2em}
+    TT {font-family: "Courier New", monospace}
+    DT {display: compact}
+    A.Bar:link {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    A.Bar:visited {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    DIV.Normal {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 1.8em; margin-bottom: 0.6em}
+    DIV.WideAbove {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 1.8em; margin-top: 0.6em; margin-bottom: 0.6em}
+    DIV.Notes {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 4.3em; margin-bottom: 0.6em}
+    DIV.Annotations {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 6.8em; margin-bottom: 0.6em}
+    DIV.Bulleted-NoPrefix {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 3.8em; margin-right: 2.0em; margin-top: 0em; margin-bottom: 0.5em}
+    DIV.Bulleted {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 3.8em; margin-right: 2.0em; margin-top: 0em; margin-bottom: 0.5em; display: list-item; list-style-type: disc}
+    </STYLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFF0" LINK="#000080" VLINK="#330033" ALINK="#0000FF">
+<DIV><SPAN Style="font-size:200%; color: rgb(0,51,153)"><B>Annotated</B></SPAN><SPAN Style="font-size:200%; color: rgb(0,0,102)"><B>&nbsp;Ada Reference Manual</B> (Ada 202y Draft 1)</SPAN> &mdash; <A HREF="AA-TTL.html"><B>Legal Information</B></A></DIV>
+<div style="margin-top: 0.6em; margin-bottom: 0.0em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1-2.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1-4.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<HR>
+<H1>1.1.3 Conformity of an Implementation</H1>
+
+<H4 Class="centered">Implementation Requirements</H4>
+<div class="paranum"><a name="p1">1</a></div>
+<div class="Normal" style="margin-bottom: 0.4em"><A NAME="I1082"></A>A 
+conforming implementation shall:&nbsp;</div>
+<div class="paranum"><a name="p1.a">1.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B><A NAME="I1083"></A>The <I>implementation</I> 
+is the software and hardware that implements the language. This includes 
+compiler, linker, operating system, hardware, etc.</div>
+<div class="paranum"><a name="p1.b">1.b</a></div>
+<div class="Annotations">We first define what it means to &ldquo;conform&rdquo; 
+in general &mdash; basically, the implementation has to properly implement 
+the normative rules given throughout the Reference Manual. Then we define 
+what it means to conform to a Specialized Needs Annex &mdash; the implementation 
+must support the core features plus the features of that Annex. Finally, 
+we define what it means to &ldquo;conform to the Reference Manual&rdquo; 
+&mdash; this requires support for the core language, and allows partial 
+(but not conflicting) support for the Specialized Needs Annexes.&nbsp;</div>
+<div class="paranum"><a name="p2">2</a></div>
+<div class="Bulleted">Translate and correctly execute legal programs 
+written in Ada, provided that they are not so large as to exceed the 
+capacity of the implementation;</div>
+<div class="paranum"><a name="p3">3</a></div>
+<div class="Bulleted">Identify all programs or program units that are 
+so large as to exceed the capacity of the implementation (or raise an 
+appropriate exception at run time);&nbsp;</div>
+<div class="paranum"><a name="p3.a">3.a</a></div>
+<div class="Annotations"><B>Implementation defined:&nbsp;</B>Capacity limitations 
+of the implementation.</div>
+<div class="paranum"><a name="p4">4</a></div>
+<div class="Bulleted">Identify all programs or program units that contain 
+errors whose detection is required by this Reference Manual;&nbsp;</div>
+<div class="paranum"><a name="p4.a">4.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>Note that we no longer use 
+the term &ldquo;rejection&rdquo; of programs or program units. We require 
+that programs or program units with errors or that exceed some capacity 
+limit be &ldquo;identified&rdquo;. The way in which errors or capacity 
+problems are reported is not specified.</div>
+<div class="paranum"><a name="p4.b">4.b</a></div>
+<div class="Annotations">An implementation is allowed to use standard 
+error-recovery techniques. We do not disallow such techniques from being 
+used across <SPAN Class="swiss"><A HREF="AA-10-1-1.html#S0286">compilation_unit</A></SPAN> 
+or <SPAN Class="swiss"><A HREF="AA-10-1-1.html#S0285">compilation</A></SPAN> 
+boundaries.</div>
+<div class="paranum"><a name="p4.c">4.c</a></div>
+<div class="Annotations">See also the Implementation Requirements of 
+<A HREF="AA-10-2.html">10.2</A>, which disallow the execution of illegal 
+partitions.</div>
+<div class="paranum"><a name="p5">5</a></div>
+<div class="Bulleted">Supply all language-defined library units required 
+by this Reference Manual;&nbsp;</div>
+<div class="paranum"><a name="p5.a">5.a</a></div>
+<div class="Annotations"><B>Implementation Note:&nbsp;</B>An implementation 
+cannot add to or modify the visible part of a language-defined library 
+unit, except where such permission is explicitly granted, unless such 
+modifications are semantically neutral with respect to the client compilation 
+units of the library unit. An implementation defines the contents of 
+the private part and body of language-defined library units.</div>
+<div class="paranum"><a name="p5.b">5.b</a></div>
+<div class="Annotations">An implementation can add <SPAN Class="swiss"><A HREF="AA-10-1-2.html#S0294">with_clause</A></SPAN>s 
+and <SPAN Class="swiss"><A HREF="AA-8-4.html#S0235">use_clause</A></SPAN>s, 
+since these modifications are semantically neutral to clients. (The implementation 
+might need <SPAN Class="swiss"><A HREF="AA-10-1-2.html#S0294">with_clause</A></SPAN>s 
+in order to implement the private part, for example.) Similarly, an implementation 
+can add a private part even in cases where a private part is not shown 
+in the Reference Manual. Explicit declarations can be provided implicitly 
+or by renaming, provided the changes are semantically neutral.</div>
+<div class="paranum"><a name="p5.c">5.c</a></div>
+<div class="Annotations"><A NAME="I1084"></A>Wherever in the Reference 
+Manual the text of a language-defined library unit contains an italicized 
+phrase starting with &ldquo;<I>implementation-defined</I>&rdquo;, the 
+implementation's version will replace that phrase with some implementation-defined 
+text that is syntactically legal at that place, and follows any other 
+applicable rules.</div>
+<div class="paranum"><a name="p5.d">5.d</a></div>
+<div class="Annotations">Note that modifications are permitted, even 
+if there are other tools in the environment that can detect the changes 
+(such as a program library browser), so long as the modifications make 
+no difference with respect to the static or dynamic semantics of the 
+resulting programs, as defined by the Reference Manual.&nbsp;</div>
+<div class="paranum"><a name="p6">6</a></div>
+<div class="Bulleted">Contain no variations except those explicitly permitted 
+by this Reference Manual, or those that are impossible or impractical 
+to avoid given the implementation's execution environment;&nbsp;</div>
+<div class="paranum"><a name="p6.a">6.a</a></div>
+<div class="Annotations"><B>Implementation defined:&nbsp;</B>Variations from 
+the standard that are impractical to avoid given the implementation's 
+execution environment.</div>
+<div class="paranum"><a name="p6.b">6.b</a></div>
+<div class="Annotations"><B>Reason:&nbsp;</B>The &ldquo;impossible or impractical&rdquo; 
+wording comes from AI-325. It takes some judgement and common sense to 
+interpret this. Restricting compilation units to less than 4 lines is 
+probably unreasonable, whereas restricting them to less than 4 billion 
+lines is probably reasonable (at least given today's technology). We 
+do not know exactly where to draw the line, so we have to make the rule 
+vague.&nbsp;</div>
+<div class="paranum"><a name="p7">7</a></div>
+<div class="Bulleted">Specify all such variations in the manner prescribed 
+by this Reference Manual.&nbsp;</div>
+<div class="paranum"><a name="p8">8</a></div>
+<div class="WideAbove" style="margin-bottom: 0.4em"><A NAME="I1085"></A><A NAME="I1086"></A>The 
+<I>external effect</I> of the execution of an Ada program is defined 
+in terms of its interactions with its external environment. <A NAME="I1087"></A>The 
+following are defined as <I>external interactions</I>:&nbsp;</div>
+<div class="paranum"><a name="p9">9</a></div>
+<div class="Bulleted">Any interaction with an external file (see <A HREF="AA-A-7.html">A.7</A>);</div>
+<div class="paranum"><a name="p10">10</a></div>
+<div class="Bulleted">The execution of certain <SPAN Class="swiss"><A HREF="AA-13-8.html#S0357">code_statement</A></SPAN>s 
+(see <A HREF="AA-13-8.html">13.8</A>); which <SPAN Class="swiss"><A HREF="AA-13-8.html#S0357">code_statement</A></SPAN>s 
+cause external interactions is implementation defined.&nbsp;</div>
+<div class="paranum"><a name="p10.a">10.a</a></div>
+<div class="Annotations"><B>Implementation defined:&nbsp;</B>Which <SPAN Class="swiss"><A HREF="AA-13-8.html#S0357">code_statement</A></SPAN>s 
+cause external interactions.</div>
+<div class="paranum"><a name="p11">11</a></div>
+<div class="Bulleted">Any call on an imported subprogram (see <A HREF="AA-B.html">Annex 
+B</A>), including any parameters passed to it;</div>
+<div class="paranum"><a name="p12">12</a></div>
+<div class="Bulleted">Any result returned or exception propagated from 
+a main subprogram (see <A HREF="AA-10-2.html">10.2</A>) or an exported 
+subprogram (see <A HREF="AA-B.html">Annex B</A>) to an external caller; 
+</div>
+<div class="paranum"><a name="p12.a">12.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>By &ldquo;result returned&rdquo; 
+we mean to include function results and values returned in [<B>in</B>] 
+<B>out</B> parameters.</div>
+<div class="paranum"><a name="p12.a.1">12.a.1/1</a></div>
+<div class="Annotations">{<I><A HREF="defect2.html#8652/0094">8652/0094</A></I>} 
+{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AIs/AI-00119.TXT">AI95-00119-01</A></I>} 
+The lack of a result from a program that does not terminate is also included 
+here.&nbsp;</div>
+<div class="paranum"><a name="p13">13</a></div>
+<div class="Bulleted">[Any read or update of an atomic or volatile object 
+(see <A HREF="AA-C-6.html">C.6</A>);]</div>
+<div class="paranum"><a name="p14">14</a></div>
+<div class="Bulleted">The values of imported and exported objects (see 
+<A HREF="AA-B.html">Annex B</A>) at the time of any other interaction 
+with the external environment.&nbsp;</div>
+<div class="paranum"><a name="p14.a">14.a/3</a></div>
+<div class="Annotations"><B>To be honest:&nbsp;</B>{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0229-1.TXT">AI05-0229-1</A></I>} 
+Also other uses of imported and exported entities, as defined by the 
+implementation, if the implementation supports such importing or exporting. 
+</div>
+<div class="paranum"><a name="p15">15</a></div>
+<div class="WideAbove">A conforming implementation of this Reference 
+Manual shall produce for the execution of a given Ada program a set of 
+interactions with the external environment whose order and timing are 
+consistent with the definitions and requirements of this Reference Manual 
+for the semantics of the given program.&nbsp;</div>
+<div class="paranum"><a name="p15.a">15.a</a></div>
+<div class="Annotations"><B>Ramification:&nbsp;</B>There is no need to produce 
+any of the &ldquo;internal effects&rdquo; defined for the semantics of 
+the program &mdash; all of these can be optimized away &mdash; so long 
+as an appropriate sequence of external interactions is produced.&nbsp;</div>
+<div class="paranum"><a name="p15.b">15.b</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>See also <A HREF="AA-11-6.html">11.6</A> 
+which specifies various liberties associated with optimizations in the 
+presence of language-defined checks, that could change the external effects 
+that might be produced. These alternative external effects are still 
+consistent with the standard, since <A HREF="AA-11-6.html">11.6</A> is 
+part of the standard.</div>
+<div class="paranum"><a name="p15.c">15.c</a></div>
+<div class="Annotations">Note also that we only require &ldquo;<I>an 
+appropriate</I> sequence of external interactions&rdquo; rather than 
+&ldquo;<I>the same</I> sequence...&rdquo; An optimizer may cause a different 
+sequence of external interactions to be produced than would be produced 
+without the optimizer, so long as the new sequence still satisfies the 
+requirements of the standard. For example, optimization might affect 
+the relative rate of progress of two concurrent tasks, thereby altering 
+the order in which two external interactions occur.</div>
+<div class="paranum"><a name="p15.d">15.d/2</a></div>
+<div class="Annotations">Note that the Ada 83 RM explicitly mentions 
+the case of an &ldquo;exact effect&rdquo; of a program, but since so 
+few programs have their effects defined that exactly, we don't even mention 
+this &ldquo;special&rdquo; case. In particular, almost any program that 
+uses floating point or tasking has to have some level of inexactness 
+in the specification of its effects. And if one includes aspects of the 
+timing of the external interactions in the external effect of the program 
+(as is appropriate for a real-time language), no &ldquo;exact effect&rdquo; 
+can be specified. For example, if two external interactions initiated 
+by a single task are separated by a &ldquo;<B>delay</B> 1.0;&rdquo; then 
+the language rules imply that the two external interactions have to be 
+separated in time by at least one second, as defined by the clock associated 
+with the <SPAN Class="swiss"><A HREF="AA-9-6.html#S0268">delay_relative_statement</A></SPAN>. 
+This in turn implies that the time at which an external interaction occurs 
+is part of the characterization of the external interaction, at least 
+in some cases, again making the specification of the required &ldquo;exact 
+effect&rdquo; impractical.&nbsp;</div>
+<div class="paranum"><a name="p16">16/5</a></div>
+<div class="Normal">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0441-1.TXT">AI12-0441-1</A></I>} 
+An implementation that conforms to this Reference Manual shall support 
+each capability required by the core language as specified. In addition, 
+an implementation that conforms to this Reference Manual may conform 
+to one or more Specialized Needs Annexes (or to none). Conformance to 
+a Specialized Needs Annex means that each capability required by the 
+Annex shall be provided as specified.&nbsp;</div>
+<div class="paranum"><a name="p16.a">16.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>The last sentence defines 
+what it means to say that an implementation conforms to a Specialized 
+Needs Annex, namely, only by supporting all capabilities required by 
+the Annex.&nbsp;</div>
+<div class="paranum"><a name="p17">17/3</a></div>
+<div class="Normal">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0229-1.TXT">AI05-0229-1</A></I>} 
+An implementation conforming to this Reference Manual may provide additional 
+aspects, attributes, library units, and pragmas. However, it shall not 
+provide any aspect, attribute, library unit, or pragma having the same 
+name as an aspect, attribute, library unit, or pragma (respectively) 
+specified in a Specialized Needs Annex unless the provided construct 
+is either as specified in the Specialized Needs Annex or is more limited 
+in capability than that required by the Annex. A program that attempts 
+to use an unsupported capability of an Annex shall either be identified 
+by the implementation before run time or shall raise an exception at 
+run time.&nbsp;</div>
+<div class="paranum"><a name="p17.a">17.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>The last sentence of the 
+preceding paragraph defines what an implementation is allowed to do when 
+it does not &quot;conform&quot; to a Specialized Needs Annex. In particular, 
+the sentence forbids implementations from providing a construct with 
+the same name as a corresponding construct in a Specialized Needs Annex 
+but with a different syntax (e.g., an extended syntax) or quite different 
+semantics. The phrase concerning &quot;more limited in capability&quot; 
+is intended to give permission to provide a partial implementation, such 
+as not implementing a subprogram in a package or having a restriction 
+not permitted by an implementation that conforms to the Annex. For example, 
+a partial implementation of the package Ada.Decimal might have Decimal.Max_Decimal_Digits 
+as 15 (rather than the required 18). This allows a partial implementation 
+to grow to a fully conforming implementation.</div>
+<div class="paranum"><a name="p17.b">17.b</a></div>
+<div class="Annotations">A restricted implementation might be restricted 
+by not providing some subprograms specified in one of the packages defined 
+by an Annex. In this case, a program that tries to use the missing subprogram 
+will usually fail to compile. Alternatively, the implementation might 
+declare the subprogram as abstract, so it cannot be called. Alternatively, 
+a subprogram body might be implemented just to raise Program_Error. The 
+advantage of this approach is that a program to be run under a fully 
+conforming Annex implementation can be checked syntactically and semantically 
+under an implementation that only partially supports the Annex. Finally, 
+an implementation might provide a package declaration without the corresponding 
+body, so that programs can be compiled, but partitions cannot be built 
+and executed.</div>
+<div class="paranum"><a name="p17.c">17.c</a></div>
+<div class="Annotations">To ensure against wrong answers being delivered 
+by a partial implementation, implementers are required to raise an exception 
+when a program attempts to use an unsupported capability and this can 
+be detected only at run time. For example, a partial implementation of 
+Ada.Decimal might require the length of the Currency string to be 1, 
+and hence, an exception would be raised if a subprogram were called in 
+the package Edited_Output with a length greater than 1.&nbsp;</div>
+<div class="paranum"><a name="p17.1">17.1/5</a></div>
+<div class="Normal">&nbsp;&nbsp;{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0179-1.TXT">AI12-0179-1</A></I>} 
+{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0265-1.TXT">AI12-0265-1</A></I>} 
+For an implementation that conforms to this Reference Manual, the implementation 
+of a language-defined unit shall abide by all postconditions, type invariants, 
+and default initial conditions specified for the unit by this document 
+(see <A HREF="AA-11-4-2.html">11.4.2</A>).&nbsp;</div>
+
+<H4 Class="centered">Documentation Requirements</H4>
+<div class="paranum"><a name="p18">18</a></div>
+<div class="Normal"><A NAME="I1088"></A><A NAME="I1089"></A><A NAME="I1090"></A><A NAME="I1091"></A><A NAME="I1092"></A>Certain 
+aspects of the semantics are defined to be either <I>implementation defined</I> 
+or <I>unspecified</I>. In such cases, the set of possible effects is 
+specified, and the implementation may choose any effect in the set. Implementations 
+shall document their behavior in implementation-defined situations, but 
+documentation is not required for unspecified situations. The implementation-defined 
+characteristics are summarized in <A HREF="AA-M-2.html">M.2</A>.&nbsp;</div>
+<div class="paranum"><a name="p18.a">18.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>We used to use the term &ldquo;implementation 
+dependent&rdquo; instead of &ldquo;unspecified&rdquo;. However, that 
+sounded too much like &ldquo;implementation defined&rdquo;. Furthermore, 
+the term &ldquo;unspecified&rdquo; is used in the ANSI C and POSIX standards 
+for this purpose, so that is another advantage. We also use &ldquo;not 
+specified&rdquo; and &ldquo;not specified by the language&rdquo; as synonyms 
+for &ldquo;unspecified&rdquo;. The documentation requirement is the only 
+difference between implementation defined and unspecified.</div>
+<div class="paranum"><a name="p18.b">18.b</a></div>
+<div class="Annotations">Note that the &ldquo;set of possible effects&rdquo; 
+can be &ldquo;all imaginable effects&rdquo;, as is the case with erroneous 
+execution.&nbsp;</div>
+<div class="paranum"><a name="p19">19</a></div>
+<div class="Normal">The implementation may choose to document implementation-defined 
+behavior either by documenting what happens in general, or by providing 
+some mechanism for the user to determine what happens in a particular 
+case.&nbsp;</div>
+<div class="paranum"><a name="p19.a">19.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>For example, if the Reference 
+Manual says that library unit elaboration order is implementation defined, 
+the implementation might describe (in its user's manual) the algorithm 
+it uses to determine the elaboration order. On the other hand, the implementation 
+might provide a command that produces a description of the elaboration 
+order for a partition upon request from the user. It is also acceptable 
+to provide cross references to existing documentation (for example, a 
+hardware manual), where appropriate.</div>
+<div class="paranum"><a name="p19.b">19.b</a></div>
+<div class="Annotations">Note that dependence of a program on implementation-defined 
+or unspecified functionality is not defined to be an error; it might 
+cause the program to be less portable, however.&nbsp;</div>
+<div class="paranum"><a name="p19.c">19.c/2</a></div>
+<div class="Annotations"><B>Documentation Requirement:&nbsp;</B>The behavior 
+of implementations in implementation-defined situations shall be documented 
+&mdash; see <A HREF="AA-M-2.html">M.2</A> for a listing.</div>
+
+<H4 Class="centered">Implementation Advice</H4>
+<div class="paranum"><a name="p20">20</a></div>
+<div class="Normal">If an implementation detects the use of an unsupported 
+Specialized Needs Annex feature at run time, it should raise Program_Error 
+if feasible.&nbsp;</div>
+<div class="paranum"><a name="p20.a.1">20.a.1/2</a></div>
+<div class="Annotations"><B>Implementation Advice:&nbsp;</B>Program_Error 
+should be raised when an unsupported Specialized Needs Annex feature 
+is used at run time.</div>
+<div class="paranum"><a name="p20.a">20.a</a></div>
+<div class="Annotations"><B>Reason:&nbsp;</B>The reason we don't <I>require</I> 
+Program_Error is that there are situations where other exceptions might 
+make sense. For example, if the Real Time Systems Annex requires that 
+the range of System.Priority include at least 30 values, an implementation 
+could conform to the Reference Manual (but not to the Annex) if it supported 
+only 12 values. Since the rules of the language require Constraint_Error 
+to be raised for out-of-range values, we cannot require Program_Error 
+to be raised instead.&nbsp;</div>
+<div class="paranum"><a name="p21">21</a></div>
+<div class="Normal">If an implementation wishes to provide implementation-defined 
+extensions to the functionality of a language-defined library unit, it 
+should normally do so by adding children to the library unit.&nbsp;</div>
+<div class="paranum"><a name="p21.a.1">21.a.1/2</a></div>
+<div class="Annotations"><B>Implementation Advice:&nbsp;</B>Implementation-defined 
+extensions to the functionality of a language-defined library unit should 
+be provided by adding children to the library unit.</div>
+<div class="paranum"><a name="p21.a">21.a</a></div>
+<div class="Annotations"><B>Implementation Note:&nbsp;</B>If an implementation 
+has support code (&ldquo;run-time system code&rdquo;) that is needed 
+for the execution of user-defined code, it can put that support code 
+in child packages of System. Otherwise, it has to use some trick to avoid 
+polluting the user's namespace. It is important that such tricks not 
+be available to user-defined code (not in the standard mode, at least) 
+&mdash; that would defeat the purpose.&nbsp;</div>
+<div class="paranum"><a name="p22">22/5</a></div>
+<div class="Notes">NOTE&nbsp;&nbsp;&nbsp;{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0440-1.TXT">AI12-0440-1</A></I>} 
+The above requirements imply that an implementation conforming to this 
+Reference Manual can support some of the capabilities required by a Specialized 
+Needs Annex without supporting all required capabilities.&nbsp;</div>
+<div class="paranum"><a name="p22.a">22.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>A conforming implementation 
+can partially support a Specialized Needs Annex. Such an implementation 
+does not conform to the Annex, but it does conform to the Reference Manual. 
+</div>
+
+<HR>
+<div style="margin-top: 0.0em; margin-bottom: 0.6em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1-2.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1-4.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<DIV Style="margin-top:0.0em"><IMG SRC="AE_logo.gif" height=100 width=113 align=right ALT="Ada-Europe">
+<SPAN Style="vertical-align: middle; font-size:120%">Ada 2005 and 2012 Editions sponsored in part by <SPAN Style="font-size: 125%"><A HREF="http://www.ada-europe.org/"><B>Ada-Europe</B></A></SPAN></SPAN></DIV>
+</BODY>
+</HTML>

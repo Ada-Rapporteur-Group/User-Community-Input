@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+    <TITLE>Subprograms and their Properties</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <META NAME="Author" CONTENT="JTC1/SC22/WG9/ARG, by Randall Brukardt, ARG Editor">
+    <META NAME="GENERATOR" CONTENT="Arm_Form.Exe, Ada Reference Manual generator">
+    <STYLE type="text/css">
+    H4.centered {text-align: center}
+    SPAN.swiss {font-family: Arial, Helvetica, sans-serif; font-size: 92%}
+    SPAN.roman {font-family: "Times New Roman", Times, serif}
+    DIV.paranum {float: left; font-family: Arial, Helvetica, sans-serif; font-size: 64%; width: 2.8em; margin-left: -0.4em; margin-right: -3.0em; margin-top: 0.2em}
+    TT {font-family: "Courier New", monospace}
+    DT {display: compact}
+    A.Bar:link {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    A.Bar:visited {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    DIV.Annotations {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 6.8em; margin-bottom: 0.6em}
+    DIV.NarrowHanging-Body {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 3.8em; margin-top: 0em; margin-bottom: 0.6em}
+    DIV.NarrowHanging-Term {float: left; font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 1.8em; margin-top: 0em; margin-bottom: 0em}
+    </STYLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFF0" LINK="#000080" VLINK="#330033" ALINK="#0000FF">
+<DIV><SPAN Style="font-size:200%; color: rgb(0,51,153)"><B>Annotated</B></SPAN><SPAN Style="font-size:200%; color: rgb(0,0,102)"><B>&nbsp;Ada Reference Manual</B> (Ada 202y Draft 1)</SPAN> &mdash; <A HREF="AA-TTL.html"><B>Legal Information</B></A></DIV>
+<div style="margin-top: 0.6em; margin-bottom: 0.0em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-1.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-3.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<HR>
+<H1>1.3.2 Subprograms and their Properties</H1>
+<div class="paranum"><a name="p1">1/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1237"></A><B>function</B></div><div class="NarrowHanging-Body"><br clear="left">
+form of subprogram that returns a result and can be called as part of 
+an expression</div>
+<div class="paranum"><a name="p2">2/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1238"></A><B>overriding operation</B></div><div class="NarrowHanging-Body"><br clear="left">
+operation that replaces an inherited primitive operation</div>
+<div class="paranum"><a name="p3">3/5</a></div>
+<div class="Annotations">Note: Operations can be marked explicitly as 
+overriding or not overriding.</div>
+<div class="paranum"><a name="p4">4/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1239"></A><B>postcondition</B></div><div class="NarrowHanging-Body"><br clear="left">
+assertion that is expected to be True when a given subprogram returns 
+normally</div>
+<div class="paranum"><a name="p5">5/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1240"></A><B>precondition</B></div><div class="NarrowHanging-Body"><br clear="left">
+assertion that is expected to be True when a given subprogram is called</div>
+<div class="paranum"><a name="p6">6/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1241"></A><B>procedure</B></div><div class="NarrowHanging-Body"><br clear="left">
+form of subprogram that does not return a result and can only be invoked 
+by a statement</div>
+<div class="paranum"><a name="p7">7/5</a></div>
+<div class="NarrowHanging-Term"><A NAME="I1242"></A><B>subprogram</B></div><div class="NarrowHanging-Body"><br clear="left">
+unit of a program that can be brought into execution in various contexts, 
+with the invocation being a subprogram call that can parameterize the 
+effect of the subprogram through the passing of operands</div>
+<div class="paranum"><a name="p8">8/5</a></div>
+<div class="Annotations">Note: There are two forms of subprograms: functions, 
+which return values, and procedures, which do not.</div>
+
+<HR>
+<div style="margin-top: 0.0em; margin-bottom: 0.6em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-1.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-3-3.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<DIV Style="margin-top:0.0em"><IMG SRC="AE_logo.gif" height=100 width=113 align=right ALT="Ada-Europe">
+<SPAN Style="vertical-align: middle; font-size:120%">Ada 2005 and 2012 Editions sponsored in part by <SPAN Style="font-size: 125%"><A HREF="http://www.ada-europe.org/"><B>Ada-Europe</B></A></SPAN></SPAN></DIV>
+</BODY>
+</HTML>

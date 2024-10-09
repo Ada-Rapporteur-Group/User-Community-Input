@@ -1,0 +1,890 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+    <TITLE>Structure</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <META NAME="Author" CONTENT="JTC1/SC22/WG9/ARG, by Randall Brukardt, ARG Editor">
+    <META NAME="GENERATOR" CONTENT="Arm_Form.Exe, Ada Reference Manual generator">
+    <STYLE type="text/css">
+    H4.centered {text-align: center}
+    SPAN.swiss {font-family: Arial, Helvetica, sans-serif; font-size: 92%}
+    SPAN.roman {font-family: "Times New Roman", Times, serif}
+    DIV.paranum {float: left; font-family: Arial, Helvetica, sans-serif; font-size: 64%; width: 2.8em; margin-left: -0.4em; margin-right: -3.0em; margin-top: 0.2em}
+    TT {font-family: "Courier New", monospace}
+    DT {display: compact}
+    SPAN.insert6 {text-decoration: underline; color: rgb(0,51,204) }
+    SPAN.delete6 {text-decoration: line-through; color: rgb(0,51,204) }
+    A.Bar:link {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    A.Bar:visited {font-family: Arial, Helvetica, sans-serif; font-style: normal; text-decoration: none; color: rgb(204,204,51)}
+    DIV.Normal {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 1.8em; margin-bottom: 0.6em}
+    DIV.Indented1 {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 3.8em; margin-bottom: 0.6em}
+    DIV.WideAbove {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 1.8em; margin-top: 0.6em; margin-bottom: 0.6em}
+    DIV.Notes {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 4.3em; margin-bottom: 0.6em}
+    DIV.Annotations {font-family: "Times New Roman", Times, serif; font-size: 80%; line-height: 122%; margin-left: 6.8em; margin-bottom: 0.6em}
+    DIV.Bulleted-NoPrefix {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 3.8em; margin-right: 2.0em; margin-top: 0em; margin-bottom: 0.5em}
+    DIV.Bulleted {font-family: "Times New Roman", Times, serif; line-height: 122%; margin-left: 3.8em; margin-right: 2.0em; margin-top: 0em; margin-bottom: 0.5em; display: list-item; list-style-type: disc}
+    </STYLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFF0" LINK="#000080" VLINK="#330033" ALINK="#0000FF">
+<DIV><SPAN Style="font-size:200%; color: rgb(0,51,153)"><B>Annotated</B></SPAN><SPAN Style="font-size:200%; color: rgb(0,0,102)"><B>&nbsp;Ada Reference Manual</B> (Ada 202y Draft 1)</SPAN> &mdash; <A HREF="AA-TTL.html"><B>Legal Information</B></A></DIV>
+<div style="margin-top: 0.6em; margin-bottom: 0.0em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1-1.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1-3.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<HR>
+<H1>1.1.2 Structure</H1>
+<div class="paranum"><a name="p1">1/3</a></div>
+<div class="Normal">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0299-1.TXT">AI05-0299-1</A></I>} 
+This document contains thirteen clauses, fifteen annexes, and an index. 
+</div>
+<div class="paranum"><a name="p1.a">1.a/3</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0299-1.TXT">AI05-0299-1</A></I>} 
+What Ada 83 called a &ldquo;chapter&rdquo; and Ada 95 (and Ada 2005) 
+called a &ldquo;section&rdquo; is called a &ldquo;clause&rdquo; in this 
+Reference Manual. Similarly, what Ada 83 called a &ldquo;section&rdquo; 
+and Ada 95 (and Ada 2005) called a &ldquo;clause&rdquo; is called a &ldquo;subclause&rdquo; 
+in this Reference Manual. Confused yet? This terminology is out of our 
+hands; it is (and was) forced by ever-changing ISO rules for drafting 
+Reference Manuals.&nbsp;</div>
+<div class="paranum"><a name="p2">2</a></div>
+<div class="Normal" style="margin-bottom: 0.4em"><A NAME="I1004"></A>The 
+<I>core</I> of the Ada language consists of:&nbsp;</div>
+<div class="paranum"><a name="p3">3/3</a></div>
+<div class="Bulleted">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0299-1.TXT">AI05-0299-1</A></I>} 
+Clauses 1 through 13&nbsp;</div>
+<div class="paranum"><a name="p4">4</a></div>
+<div class="Bulleted"><A HREF="AA-A.html">Annex A</A>, &ldquo;<A HREF="AA-A.html">Predefined 
+Language Environment</A>&rdquo;</div>
+<div class="paranum"><a name="p5">5</a></div>
+<div class="Bulleted"><A HREF="AA-B.html">Annex B</A>, &ldquo;<A HREF="AA-B.html">Interface 
+to Other Languages</A>&rdquo;</div>
+<div class="paranum"><a name="p6">6</a></div>
+<div class="Bulleted"><A HREF="AA-J.html">Annex J</A>, &ldquo;<A HREF="AA-J.html">Obsolescent 
+Features</A>&rdquo;&nbsp;</div>
+<div class="paranum"><a name="p6.a">6.a/5</a></div>
+<div class="Annotations"><B>Term entry:&nbsp;</B><B>core language</B> &mdash; 
+clause or annex in which are defined language constructs or capabilities 
+that are provided by all conforming implementations<BR>
+Note: A construct is said to be part of the core language if it is defined 
+in a core language clause or annex.</div>
+<div class="paranum"><a name="p7">7</a></div>
+<div class="WideAbove" style="margin-bottom: 0.4em"><A NAME="I1005"></A><A NAME="I1006"></A><A NAME="I1007"></A>The 
+following <I>Specialized Needs Annexes</I> define features that are needed 
+by certain application areas:&nbsp;</div>
+<div class="paranum"><a name="p8">8</a></div>
+<div class="Bulleted"><A HREF="AA-C.html">Annex C</A>, &ldquo;<A HREF="AA-C.html">Systems 
+Programming</A>&rdquo;</div>
+<div class="paranum"><a name="p9">9</a></div>
+<div class="Bulleted"><A HREF="AA-D.html">Annex D</A>, &ldquo;<A HREF="AA-D.html">Real-Time 
+Systems</A>&rdquo;</div>
+<div class="paranum"><a name="p10">10</a></div>
+<div class="Bulleted"><A HREF="AA-E.html">Annex E</A>, &ldquo;<A HREF="AA-E.html">Distributed 
+Systems</A>&rdquo;</div>
+<div class="paranum"><a name="p11">11</a></div>
+<div class="Bulleted"><A HREF="AA-F.html">Annex F</A>, &ldquo;<A HREF="AA-F.html">Information 
+Systems</A>&rdquo;</div>
+<div class="paranum"><a name="p12">12</a></div>
+<div class="Bulleted"><A HREF="AA-G.html">Annex G</A>, &ldquo;<A HREF="AA-G.html">Numerics</A>&rdquo;</div>
+<div class="paranum"><a name="p13">13</a></div>
+<div class="Bulleted"><A HREF="AA-H.html">Annex H</A>, &ldquo;<A HREF="AA-H.html">High 
+Integrity Systems</A>&rdquo;&nbsp;</div>
+<div class="paranum"><a name="p13.a">13.a/5</a></div>
+<div class="Annotations"><B>Term entry:&nbsp;</B><B>specialized needs annex</B> 
+&mdash; annex in which are defined language constructs or capabilities 
+that are not necessarily provided by all conforming implementations</div>
+<div class="paranum"><a name="p14">14</a></div>
+<div class="WideAbove" style="margin-bottom: 0.4em"><A NAME="I1008"></A><A NAME="I1009"></A>The 
+core language and the Specialized Needs Annexes are normative, except 
+that the material in each of the items listed below is informative:&nbsp;</div>
+<div class="paranum"><a name="p15">15</a></div>
+<div class="Bulleted">Text under a NOTES or Examples heading.</div>
+<div class="paranum"><a name="p16">16/3</a></div>
+<div class="Bulleted">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0299-1.TXT">AI05-0299-1</A></I>} 
+Each subclause whose title starts with the word &ldquo;Example&rdquo; 
+or &ldquo;Examples&rdquo;.&nbsp;</div>
+<div class="paranum"><a name="p17">17</a></div>
+<div class="Normal">All implementations shall conform to the core language. 
+In addition, an implementation may conform separately to one or more 
+Specialized Needs Annexes.&nbsp;</div>
+<div class="paranum"><a name="p18">18</a></div>
+<div class="WideAbove" style="margin-bottom: 0.4em"><A NAME="I1010"></A><A NAME="I1011"></A><A NAME="I1012"></A> 
+The following Annexes are informative:&nbsp;</div>
+<div class="paranum"><a name="p19">19</a></div>
+<div class="Bulleted"><A HREF="AA-K.html">Annex K</A>, &ldquo;<A HREF="AA-K.html">Language-Defined 
+Aspects and Attributes</A>&rdquo;</div>
+<div class="paranum"><a name="p20">20</a></div>
+<div class="Bulleted"><A HREF="AA-L.html">Annex L</A>, &ldquo;<A HREF="AA-L.html">Language-Defined 
+Pragmas</A>&rdquo;</div>
+<div class="paranum"><a name="p21">21/3</a></div>
+<div class="Bulleted">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0004-1.TXT">AI05-0004-1</A></I>} 
+<A HREF="AA-M.html">Annex M</A>, &ldquo;<A HREF="AA-M.html">Summary of 
+Documentation Requirements</A>&rdquo;</div>
+<div class="paranum"><a name="p22">22</a></div>
+<div class="Bulleted"><A HREF="AA-N.html">Annex N</A>, &ldquo;<A HREF="AA-N.html">Glossary</A>&rdquo; 
+</div>
+<div class="paranum"><a name="p23">23</a></div>
+<div class="Bulleted"><A HREF="AA-P.html">Annex P</A>, &ldquo;<A HREF="AA-P.html">Syntax 
+Summary</A>&rdquo;</div>
+<div class="paranum"><a name="p23.1">23.1/3</a></div>
+<div class="Bulleted">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0262-1.TXT">AI05-0262-1</A></I>} 
+<A HREF="AA-Q.html">Annex Q</A>, &ldquo;<A HREF="AA-Q.html">Language-Defined 
+Entities</A>&rdquo;</div>
+<div class="paranum"><a name="p23.a">23.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>The idea of the Specialized 
+Needs Annexes is that implementations can choose to target certain application 
+areas. For example, an implementation specifically targeted to embedded 
+machines might support the application-specific features for Real-time 
+Systems, but not the application-specific features for Information Systems.</div>
+<div class="paranum"><a name="p23.b">23.b</a></div>
+<div class="Annotations">The Specialized Needs Annexes extend the core 
+language only in ways that users, implementations, and standards bodies 
+are allowed to extend the language; for example, via additional library 
+units, attributes, representation items (see <A HREF="AA-13-1.html">13.1</A>), 
+<SPAN Class="swiss"><A HREF="AA-2-8.html#S0019">pragma</A></SPAN>s, and 
+constraints on semantic details that are left unspecified by the core 
+language. Many implementations already provide much of the functionality 
+defined by Specialized Needs Annexes; our goal is to increase uniformity 
+among implementations by defining standard ways of providing the functionality.</div>
+<div class="paranum"><a name="p23.c">23.c/2</a></div>
+<div class="Annotations">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AIs/AI-00114.TXT">AI95-00114-01</A></I>} 
+We recommend that the certification procedures allow implementations 
+to certify the core language, plus any set of the Specialized Needs Annexes. 
+We recommend that implementations <I>not</I> be allowed to certify a 
+portion of one of the Specialized Needs Annexes, although implementations 
+can, of course, provide uncertified support for such portions. We have 
+designed the Specialized Needs Annexes assuming that this recommendation 
+is followed. Thus, our decisions about what to include and what not to 
+include in those annexes are based on the assumption that each annex 
+is certified in an &ldquo;all-or-nothing&rdquo; manner.</div>
+<div class="paranum"><a name="p23.d">23.d</a></div>
+<div class="Annotations">An implementation may, of course, support extensions 
+that are different from (but possibly related to) those defined by one 
+of the Specialized Needs Annexes. We recommend that, where appropriate, 
+implementations do this by adding library units that are children of 
+existing language-defined library packages.</div>
+<div class="paranum"><a name="p23.e">23.e</a></div>
+<div class="Annotations">An implementation should not provide extensions 
+that conflict with those defined in the Specialized Needs Annexes, in 
+the following sense: Suppose an implementation supports a certain error-free 
+program that uses only functionality defined in the core and in the Specialized 
+Needs Annexes. The implementation should ensure that that program will 
+still be error free in some possible full implementation of all of the 
+Specialized Needs Annexes, and that the semantics of the program will 
+not change. For example, an implementation should not provide a package 
+with the same name as one defined in one of the Specialized Needs Annexes, 
+but that behaves differently, <I>even if that implementation does not 
+claim conformance to that Annex</I>.</div>
+<div class="paranum"><a name="p23.f">23.f</a></div>
+<div class="Annotations">Note that the Specialized Needs Annexes do not 
+conflict with each other; it is the intent that a single implementation 
+can conform to all of them.&nbsp;</div>
+<div class="paranum"><a name="p24">24/4</a></div>
+<div class="WideAbove">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0299-1.TXT">AI05-0299-1</A></I>} 
+{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0056-1.TXT">AI12-0056-1</A></I>} 
+Each clause is divided into subclauses that have a common structure. 
+Each clause and subclause first introduces its subject. After the introductory 
+text, text is labeled with the following headings:&nbsp;</div>
+
+<H4 Class="centered">Language Design Principles</H4>
+<div class="paranum"><a name="p24.a">24.a</a></div>
+<div class="Annotations">These are not rules of the language, but guiding 
+principles or goals used in defining the rules of the language. In some 
+cases, the goal is only partially met; such cases are explained.</div>
+<div class="paranum"><a name="p24.b">24.b/3</a></div>
+<div class="Annotations">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0005-1.TXT">AI05-0005-1</A></I>} 
+This is not part of the definition of the language, and does not appear 
+in the Ada 2022 RM.&nbsp;</div>
+
+<H4 Class="centered">Syntax</H4>
+<div class="paranum"><a name="p25">25</a></div>
+<div class="Indented1"><A NAME="I1013"></A><A NAME="I1014"></A><A NAME="I1015"></A><A NAME="I1016"></A><A NAME="I1017"></A>Syntax 
+rules (indented).&nbsp;</div>
+
+<H4 Class="centered">Name Resolution Rules</H4>
+<div class="paranum"><a name="p26">26/3</a></div>
+<div class="Normal">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0299-1.TXT">AI05-0299-1</A></I>} 
+<A NAME="I1018"></A><A NAME="I1019"></A><A NAME="I1020"></A>Compile-time 
+rules that are used in name resolution, including overload resolution. 
+</div>
+<div class="paranum"><a name="p26.a">26.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>These rules are observed 
+at compile time. (We say &ldquo;observed&rdquo; rather than &ldquo;checked&rdquo;, 
+because these rules are not individually checked. They are really just 
+part of the Legality Rules in Clause <A HREF="AA-8.html">8</A> that require 
+exactly one interpretation of each constituent of a complete context.) 
+The only rules used in overload resolution are the Syntax Rules and the 
+Name Resolution Rules.</div>
+<div class="paranum"><a name="p26.b">26.b</a></div>
+<div class="Annotations">When dealing with nonoverloadable declarations 
+it sometimes makes no semantic difference whether a given rule is a Name 
+Resolution Rule or a Legality Rule, and it is sometimes difficult to 
+decide which it should be. We generally make a given rule a Name Resolution 
+Rule only if it has to be. For example, &ldquo;The <SPAN Class="swiss"><A HREF="AA-4-1.html#S0091">name</A></SPAN>, 
+if any, in a <SPAN Class="swiss"><A HREF="AA-11-3.html#S0308">raise_statement</A></SPAN> 
+shall be the <SPAN Class="swiss"><A HREF="AA-4-1.html#S0091">name</A></SPAN> 
+of an exception.&rdquo; is under &ldquo;Legality Rules.&rdquo;&nbsp;</div>
+
+<H4 Class="centered">Legality Rules</H4>
+<div class="paranum"><a name="p27">27</a></div>
+<div class="Normal"><A NAME="I1021"></A><A NAME="I1022"></A><A NAME="I1023"></A>Rules 
+that are enforced at compile time. <A NAME="I1024"></A><A NAME="I1025"></A>A 
+construct is <I>legal</I> if it obeys all of the Legality Rules.&nbsp;</div>
+<div class="paranum"><a name="p27.a">27.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>These rules are not used 
+in overload resolution.</div>
+<div class="paranum"><a name="p27.b">27.b</a></div>
+<div class="Annotations">Note that run-time errors are always attached 
+to exceptions; for example, it is not &ldquo;illegal&rdquo; to divide 
+by zero, it just raises an exception.&nbsp;</div>
+
+<H4 Class="centered">Static Semantics</H4>
+<div class="paranum"><a name="p28">28</a></div>
+<div class="Normal"><A NAME="I1026"></A><A NAME="I1027"></A>A definition 
+of the compile-time effect of each construct.&nbsp;</div>
+<div class="paranum"><a name="p28.a">28.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>The most important compile-time 
+effects represent the effects on the symbol table associated with declarations 
+(implicit or explicit). In addition, we use this heading as a bit of 
+a grab bag for equivalences, package specifications, etc. For example, 
+this is where we put statements like so-and-so is equivalent to such-and-such. 
+(We ought to try to really mean it when we say such things!) Similarly, 
+statements about magically-generated implicit declarations go here. These 
+rules are generally written as statements of fact about the semantics, 
+rather than as a you-shall-do-such-and-such sort of thing.&nbsp;</div>
+
+<H4 Class="centered">Post-Compilation Rules</H4>
+<div class="paranum"><a name="p29">29</a></div>
+<div class="Normal"><A NAME="I1028"></A><A NAME="I1029"></A><A NAME="I1030"></A><A NAME="I1031"></A>Rules 
+that are enforced before running a partition. <A NAME="I1032"></A><A NAME="I1033"></A>A 
+partition is legal if its compilation units are legal and it obeys all 
+of the Post-Compilation Rules.&nbsp;</div>
+<div class="paranum"><a name="p29.a">29.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>It is not specified exactly 
+when these rules are checked, so long as they are checked for any given 
+partition before that partition starts running. An implementation may 
+choose to check some such rules at compile time, and reject <SPAN Class="swiss"><A HREF="AA-10-1-1.html#S0286">compilation_unit</A></SPAN>s 
+accordingly. Alternatively, an implementation may check such rules when 
+the partition is created (usually known as &ldquo;link time&rdquo;), 
+or when the partition is mapped to a particular piece of hardware (but 
+before the partition starts running).&nbsp;</div>
+
+<H4 Class="centered">Dynamic Semantics</H4>
+<div class="paranum"><a name="p30">30</a></div>
+<div class="Normal"><A NAME="I1034"></A><A NAME="I1035"></A><A NAME="I1036"></A><A NAME="I1037"></A>A 
+definition of the run-time effect of each construct.&nbsp;</div>
+<div class="paranum"><a name="p30.a">30.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>This heading describes what 
+happens at run time. runtime checks, which raise exceptions upon failure, 
+are described here. Each item that involves a runtime check is marked 
+with the name of the check &mdash; these are the same check names that 
+are used in a <SPAN Class="swiss"><A HREF="AA-2-8.html#S0019">pragma</A></SPAN> 
+Suppress. Principle: Every check should have a name, usable in a <SPAN Class="swiss"><A HREF="AA-2-8.html#S0019">pragma</A></SPAN> 
+Suppress.&nbsp;</div>
+
+<H4 Class="centered">Bounded (Run-Time) Errors</H4>
+<div class="paranum"><a name="p31">31</a></div>
+<div class="Normal"><A NAME="I1038"></A><A NAME="I1039"></A>Situations 
+that result in bounded (run-time) errors (see <A HREF="AA-1-1-5.html">1.1.5</A>). 
+</div>
+<div class="paranum"><a name="p31.a">31.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>The &ldquo;bounds&rdquo; 
+of each such error are described here &mdash; that is, we characterize 
+the set of all possible behaviors that can result from a bounded error 
+occurring at run time.&nbsp;</div>
+
+<H4 Class="centered">Erroneous Execution</H4>
+<div class="paranum"><a name="p32">32</a></div>
+<div class="Normal"><A NAME="I1040"></A><A NAME="I1041"></A>Situations 
+that result in erroneous execution (see <A HREF="AA-1-1-5.html">1.1.5</A>). 
+</div>
+
+<H4 Class="centered">Implementation Requirements</H4>
+<div class="paranum"><a name="p33">33</a></div>
+<div class="Normal"><A NAME="I1042"></A>Additional requirements for conforming 
+implementations.&nbsp;</div>
+<div class="paranum"><a name="p33.a">33.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>...as opposed to rules imposed 
+on the programmer. An example might be, &ldquo;The smallest representable 
+duration, Duration'Small, shall not be greater than twenty milliseconds&rdquo;.</div>
+<div class="paranum"><a name="p33.b">33.b</a></div>
+<div class="Annotations">It's really just an issue of how the rule is 
+worded. We could write the same rule as &ldquo;The smallest representable 
+duration is an implementation-defined value less than or equal to 20 
+milliseconds&rdquo; and then it would be under &ldquo;Static Semantics&rdquo;. 
+</div>
+
+<H4 Class="centered">Documentation Requirements</H4>
+<div class="paranum"><a name="p34">34</a></div>
+<div class="Normal"><A NAME="I1043"></A>Documentation requirements for 
+conforming implementations.&nbsp;</div>
+<div class="paranum"><a name="p34.a">34.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>These requirements are beyond 
+those that are implicitly specified by the phrase &ldquo;implementation 
+defined&rdquo;. The latter require documentation as well, but we don't 
+repeat these cases under this heading. Usually this heading is used for 
+when the description of the documentation requirement is longer and does 
+not correspond directly to one, narrow normative sentence.&nbsp;</div>
+
+<H4 Class="centered">Metrics</H4>
+<div class="paranum"><a name="p35">35</a></div>
+<div class="Normal"><A NAME="I1044"></A>Metrics that are specified for 
+the time/space properties of the execution of certain language constructs. 
+</div>
+
+<H4 Class="centered">Implementation Permissions</H4>
+<div class="paranum"><a name="p36">36</a></div>
+<div class="Normal"><A NAME="I1045"></A>Additional permissions given 
+to the implementer.&nbsp;</div>
+<div class="paranum"><a name="p36.a">36.a</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>For example, &ldquo;The implementation 
+is allowed to impose further restrictions on the record aggregates allowed 
+in code statements.&rdquo; When there are restrictions on the permission, 
+those restrictions are given here also. For example, &ldquo;An implementation 
+is allowed to restrict the kinds of subprograms that are allowed to be 
+main subprograms. However, it shall support at least parameterless procedures.&rdquo; 
+&mdash; we don't split this up between here and &ldquo;Implementation 
+Requirements&rdquo;.&nbsp;</div>
+
+<H4 Class="centered">Implementation Advice</H4>
+<div class="paranum"><a name="p37">37</a></div>
+<div class="Normal"><A NAME="I1046"></A><A NAME="I1047"></A>Optional 
+advice given to the implementer. The word &ldquo;should&rdquo; is used 
+to indicate that the advice is a recommendation, not a requirement. It 
+is implementation defined whether or not a given recommendation is obeyed. 
+</div>
+<div class="paranum"><a name="p37.a">37.a/2</a></div>
+<div class="Annotations"><B>Implementation defined:&nbsp;</B>Whether or not 
+each recommendation given in Implementation Advice is followed &mdash; 
+see <A HREF="AA-M-3.html">M.3</A> for a listing.</div>
+<div class="paranum"><a name="p37.b">37.b/1</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>The advice generally shows 
+the intended implementation, but the implementer is free to ignore it. 
+The implementer is the sole arbiter of whether or not the advice has 
+been obeyed, if not, whether the reason is a good one, and whether the 
+required documentation is sufficient. It would be wrong for the ACATS 
+to enforce any of this advice.</div>
+<div class="paranum"><a name="p37.c">37.c</a></div>
+<div class="Annotations">For example, &ldquo;Whenever possible, the implementation 
+should choose a value no greater than fifty microseconds for the smallest 
+representable duration, Duration'Small.&rdquo;</div>
+<div class="paranum"><a name="p37.d">37.d</a></div>
+<div class="Annotations">We use this heading, for example, when the rule 
+is so low level or implementation-oriented as to be untestable. We also 
+use this heading when we wish to encourage implementations to behave 
+in a certain way in most cases, but we do not wish to burden implementations 
+by requiring the behavior.&nbsp;</div>
+
+<H4 Class="centered">Usage</H4>
+<div class="paranum"><a name="p38">38</a></div>
+<div class="Normal"><span class="insert6">Advice and notes on the usage 
+of Ada programming language. This material is informative.</span>&nbsp;</div>
+<div class="paranum"><a name="p38.a">38.a</a></div>
+<div class="Annotations"><span class="insert6"><B>Discussion:&nbsp;</B>Traditionally, 
+this information has been given in notes; however, the current ISO/IEC 
+JTC1 drafting standard does not allow giving advice in notes. Therefore, 
+this information has been moved to its own category in order to keep 
+it separate from advice and notes intended for implementers.</span>&nbsp;</div>
+<div class="paranum"><a name="p39">39</a></div>
+<div class="Notes">NOTE&nbsp;&nbsp;&nbsp;<A NAME="I1048"></A>Notes emphasize 
+consequences of the rules described in the (sub)clause or elsewhere. 
+This material is informative.&nbsp;</div>
+
+<H4 Class="centered">Examples</H4>
+<div class="paranum"><a name="p40">40</a></div>
+<div class="Normal">Examples illustrate the possible forms of the constructs 
+described. This material is informative.&nbsp;</div>
+<div class="paranum"><a name="p40.a.1">40.a.1/5</a></div>
+<div class="Annotations"><B>Discussion:&nbsp;</B>{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI12s/AI12-0386-1.TXT">AI12-0386-1</A></I>} 
+Names used in examples refer either to language-defined entities or to 
+entities declared in other Examples in this Reference Manual. In the 
+latter case, if the reference is to a later example, we use a cross-reference 
+(<SPAN Class="roman"><I>-- See &lt;&lt;some clause&gt;&gt;.</I></SPAN>) 
+to show the source of the declaration. In theory, one could combine all 
+of the examples (excepting examples of fragments like identifiers or 
+<SPAN Class="swiss"><A HREF="AA-3-2-1.html#S0025">type_definition</A></SPAN>s) 
+in an appropriate unit and compile them all.</div>
+<div class="paranum"><a name="p40.a">40.a</a></div>
+<div class="Annotations">&nbsp;<BR>
+ <BR>
+The next three headings list all language changes between Ada 83 and 
+Ada 95. Language changes are any change that changes the set of text 
+strings that are legal Ada programs, or changes the meaning of any legal 
+program. Wording changes, such as changes in terminology, are not language 
+changes. Each language change falls into one of the following three categories: 
+</div>
+
+<H4 Class="centered">Inconsistencies With Ada 83</H4>
+<div class="paranum"><a name="p40.b">40.b</a></div>
+<div class="Annotations"><A NAME="I1049"></A>This heading lists all of 
+the upward inconsistencies between Ada 83 and Ada 95. Upward inconsistencies 
+are situations in which a legal Ada 83 program is a legal Ada 95 program 
+with different semantics. This type of upward incompatibility is the 
+worst type for users, so we only tolerate it in rare situations.</div>
+<div class="paranum"><a name="p40.c">40.c</a></div>
+<div class="Annotations">(Note that the semantics of a program is not 
+the same thing as the behavior of the program. Because of Ada's indeterminacy, 
+the &ldquo;semantics&rdquo; of a given feature describes a <I>set</I> 
+of behaviors that can be exhibited by that feature. The set can contain 
+more than one allowed behavior. Thus, when we ask whether the semantics 
+changes, we are asking whether the set of behaviors changes.)</div>
+<div class="paranum"><a name="p40.d">40.d/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 95, Ada 2005, Ada 2012, or Ada 2022 RM. 
+</div>
+
+<H4 Class="centered">Incompatibilities With Ada 83</H4>
+<div class="paranum"><a name="p40.e">40.e</a></div>
+<div class="Annotations"><A NAME="I1050"></A>This heading lists all of 
+the upward incompatibilities between Ada 83 and Ada 95, except for the 
+ones listed under &ldquo;Inconsistencies With Ada 83&rdquo; above. These 
+are the situations in which a legal Ada 83 program is illegal in Ada 
+95. We do not generally consider a change that turns erroneous execution 
+into an exception, or into an illegality, to be upwardly incompatible.</div>
+<div class="paranum"><a name="p40.f">40.f/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 95, Ada 2005, Ada 2012, or Ada 2022 RM. 
+</div>
+
+<H4 Class="centered">Extensions to Ada 83</H4>
+<div class="paranum"><a name="p40.g">40.g</a></div>
+<div class="Annotations"><A NAME="I1051"></A>This heading is used to 
+list all upward compatible language changes; that is, language extensions. 
+These are the situations in which a legal Ada 95 program is not a legal 
+Ada 83 program. The vast majority of language changes fall into this 
+category.</div>
+<div class="paranum"><a name="p40.h">40.h/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 95, Ada 2005, Ada 2012, or Ada 2022 RM.</div>
+<div class="paranum"><a name="p40.i">40.i</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em">&nbsp;<BR>
+ <BR>
+As explained above, the next heading does not represent any language 
+change:&nbsp;</div>
+
+<H4 Class="centered">Wording Changes from Ada 83</H4>
+<div class="paranum"><a name="p40.j">40.j/2</a></div>
+<div class="Annotations"><A NAME="I1052"></A>This heading lists some 
+of the nonsemantic changes between the Ada 83 RM and the Ada 95 RM. It 
+is incomplete; we have not attempted to list all wording changes, but 
+only the &ldquo;interesting&rdquo; ones.</div>
+<div class="paranum"><a name="p40.k">40.k/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 95, Ada 2005, Ada 2012, or Ada 2022 RM. 
+</div>
+<div class="paranum"><a name="p40.l">40.l/2</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em"><B>Discussion: 
+</B>&nbsp;<BR>
+ <BR>
+The next three headings list all language changes between Ada 95 and 
+Ada 2005 (the language defined by the Ada 95 standard plus Technical 
+Corrigendum 1 plus Amendment 1). Each language change falls into one 
+of the following three categories:&nbsp;</div>
+
+<H4 Class="centered">Inconsistencies With Ada 95</H4>
+<div class="paranum"><a name="p40.m">40.m/2</a></div>
+<div class="Annotations"><A NAME="I1053"></A>This heading lists all of 
+the upward inconsistencies between Ada 95 and Ada 2005. Upward inconsistencies 
+are situations in which a legal Ada 95 program is a legal Ada 2005 program 
+with different semantics.</div>
+<div class="paranum"><a name="p40.n">40.n/3</a></div>
+<div class="Annotations">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0005-1.TXT">AI05-0005-1</A></I>} 
+Inconsistencies marked with <B>Corrigendum:</B><A NAME="I1054"></A> are 
+corrections to the original Ada 95 definition introduced by Corrigendum 
+1. Inconsistencies marked with <B>Amendment Correction:</B><A NAME="I1055"></A> 
+are corrections to the original Ada 95 definition added by Amendment 
+1. Formally, these are inconsistencies caused by Ada Issues classified 
+as Binding Interpretations; implementations of Ada 95 are supposed to 
+follow these corrections, not the original flawed language definition. 
+Thus, these strictly speaking are not inconsistencies between Ada 95 
+and Ada 2005. Practically, however, they very well may be, as early Ada 
+95 implementations might not follow the recommendation. Inconsistencies 
+so marked are not portable between Ada 95 implementations, while usually 
+Ada 2005 will have more clearly defined behavior. Therefore, we document 
+these for completeness.</div>
+<div class="paranum"><a name="p40.o">40.o/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 2005 , Ada 2012, or Ada 2022 RM.&nbsp;</div>
+
+<H4 Class="centered">Incompatibilities With Ada 95</H4>
+<div class="paranum"><a name="p40.p">40.p/2</a></div>
+<div class="Annotations"><A NAME="I1056"></A>This heading lists all of 
+the upward incompatibilities between Ada 95 and Ada 2005, except for 
+the ones listed under &ldquo;Inconsistencies With Ada 95&rdquo; above. 
+These are the situations in which a legal Ada 95 program is illegal in 
+Ada 2005.</div>
+<div class="paranum"><a name="p40.q">40.q/3</a></div>
+<div class="Annotations">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0005-1.TXT">AI05-0005-1</A></I>} 
+As with inconsistencies, incompatibilities marked with <B>Corrigendum:</B> 
+are corrections to the original Ada 95 definition introduced by Corrigendum 
+1. Incompatibilities marked with <B>Amendment Correction:</B> are corrections 
+to the original Ada 95 definition added by Amendment 1. Formally, these 
+are incompatibilities caused by Ada Issues classified as Binding Interpretations; 
+implementations of Ada 95 are supposed to follow these corrections, not 
+the original flawed language definition. Thus, these strictly speaking 
+are not incompatibilities between Ada 95 and Ada 2005. Practically, however, 
+they very well may be, as early Ada 95 implementations might not follow 
+the recommendation. Therefore, some Ada 95 implementations may be able 
+to compile the examples, while others might not. In contrast, Ada 2005 
+compilers will have consistent behavior. Therefore, we document these 
+for completeness.</div>
+<div class="paranum"><a name="p40.r">40.r/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 2005 , Ada 2012, or Ada 2022 RM.&nbsp;</div>
+
+<H4 Class="centered">Extensions to Ada 95</H4>
+<div class="paranum"><a name="p40.s">40.s/2</a></div>
+<div class="Annotations"><A NAME="I1057"></A>This heading is used to 
+list all upward compatible language changes; that is, language extensions. 
+These are the situations in which a legal Ada 2005 program is not a legal 
+Ada 95 program. The vast majority of language changes fall into this 
+category.</div>
+<div class="paranum"><a name="p40.t">40.t/3</a></div>
+<div class="Annotations">{<I><A HREF="http://www.ada-auth.org/cgi-bin/cvsweb.cgi/AI05s/AI05-0005-1.TXT">AI05-0005-1</A></I>} 
+As with incompatibilities, extensions marked with <B>Corrigendum:</B> 
+are corrections to the original Ada 95 definition introduced by Corrigendum 
+1. Extensions marked with <B>Amendment Correction:</B> are corrections 
+to the original Ada 95 definition added by Amendment 1. Formally, these 
+are extensions allowed by Ada Issues classified as Binding Interpretations. 
+As corrections, implementations of Ada 95 are allowed to implement these 
+extensions. Thus, these strictly speaking are not extensions of Ada 95; 
+they're part of Ada 95. Practically, however, they very well may be extensions, 
+as early Ada 95 implementations might not implement the extension. Therefore, 
+some Ada 95 implementations may be able to compile the examples, while 
+others might not. In contrast, Ada 2005 compilers will always support 
+the extensions. Therefore, we document these for completeness.</div>
+<div class="paranum"><a name="p40.u">40.u/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 2005 , Ada 2012, or Ada 2022 RM.</div>
+<div class="paranum"><a name="p40.v">40.v/2</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em">&nbsp;<BR>
+ <BR>
+As explained above, the next heading does not represent any language 
+change:&nbsp;</div>
+
+<H4 Class="centered">Wording Changes from Ada 95</H4>
+<div class="paranum"><a name="p40.w">40.w/2</a></div>
+<div class="Annotations"><A NAME="I1058"></A>This heading lists some 
+of the nonsemantic changes between the Ada 95 RM and the Ada 2005 RM. 
+This heading lists only &ldquo;interesting&rdquo; changes (for instance, 
+editorial corrections are not listed). Changes which come from Technical 
+Corrigendum 1 are marked <B>Corrigendum</B>; unmarked changes come from 
+Amendment 1.</div>
+<div class="paranum"><a name="p40.x">40.x/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 2005 , Ada 2012, or Ada 2022 RM.&nbsp;</div>
+<div class="paranum"><a name="p40.y">40.y/3</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em"><B>Discussion: 
+</B>&nbsp;<BR>
+ <BR>
+The next three headings list all language changes between Ada 2005 (the 
+language defined by the Ada 95 standard plus Technical Corrigendum 1 
+plus Amendment 1) and Ada 2012 (the language defined by the third edition 
+of the Reference Manual). Each language change falls into one of the 
+following three categories:&nbsp;</div>
+
+<H4 Class="centered">Inconsistencies With Ada 2005</H4>
+<div class="paranum"><a name="p40.z">40.z/3</a></div>
+<div class="Annotations"><A NAME="I1059"></A>This heading lists all of 
+the upward inconsistencies between Ada 2005 and Ada 2012. Upward inconsistencies 
+are situations in which a legal Ada 2005 program is a legal Ada 2012 
+program with different semantics.</div>
+<div class="paranum"><a name="p40.aa">40.aa/3</a></div>
+<div class="Annotations">Inconsistencies marked with <B>Correction:</B><A NAME="I1060"></A> 
+are corrections to the original Ada 2005 definition added by the third 
+edition of the Reference Manual. Formally, these are inconsistencies 
+caused by Ada Issues classified as Binding Interpretations; implementations 
+of Ada 2005 are supposed to follow these corrections, not the original 
+flawed language definition. Thus, these strictly speaking are not inconsistencies 
+between Ada 2005 and Ada 2012. Practically, however, they very well may 
+be, as early Ada 2005 implementations might not follow the recommendation. 
+Inconsistencies so marked are not portable between Ada 2005 implementations, 
+while usually Ada 2012 will have more clearly defined behavior. Therefore, 
+we document these for completeness.</div>
+<div class="paranum"><a name="p40.bb">40.bb/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 2012 or Ada 2022 RM.&nbsp;</div>
+
+<H4 Class="centered">Incompatibilities With Ada 2005</H4>
+<div class="paranum"><a name="p40.cc">40.cc/3</a></div>
+<div class="Annotations"><A NAME="I1061"></A>This heading lists all of 
+the upward incompatibilities between Ada 2005 and Ada 2012, except for 
+the ones listed under &ldquo;Inconsistencies With Ada 2005&rdquo; above. 
+These are the situations in which a legal Ada 2005 program is illegal 
+in Ada 2012.</div>
+<div class="paranum"><a name="p40.dd">40.dd/3</a></div>
+<div class="Annotations">As with inconsistencies, incompatibilities marked 
+with <B>Correction:</B> are corrections to the original Ada 2005 definition 
+added by the third edition. Formally, these are incompatibilities caused 
+by Ada Issues classified as Binding Interpretations; implementations 
+of Ada 2005 are supposed to follow these corrections, not the original 
+flawed language definition. Thus, these strictly speaking are not incompatibilities 
+between Ada 2005 and Ada 2012. Practically, however, they very well may 
+be, as early Ada 2005 implementations might not follow the recommendation. 
+Therefore, some Ada 2005 implementations may be able to compile the examples, 
+while others might not. In contrast, Ada 2012 compilers will have consistent 
+behavior. Therefore, we document these for completeness.</div>
+<div class="paranum"><a name="p40.ee">40.ee/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 2012 or Ada 2022 RM.&nbsp;</div>
+
+<H4 Class="centered">Extensions to Ada 2005</H4>
+<div class="paranum"><a name="p40.ff">40.ff/3</a></div>
+<div class="Annotations"><A NAME="I1062"></A>This heading is used to 
+list all upward compatible language changes; that is, language extensions. 
+These are the situations in which a legal Ada 2012 program is not a legal 
+Ada 2005 program. The vast majority of language changes fall into this 
+category.</div>
+<div class="paranum"><a name="p40.gg">40.gg/3</a></div>
+<div class="Annotations">As with incompatibilities, extensions marked 
+with <B>Correction:</B> are corrections to the original Ada 2005 definition 
+added by the third edition. Formally, these are extensions allowed by 
+Ada Issues classified as Binding Interpretations. As corrections, implementations 
+of Ada 2005 (and sometimes Ada 95) are allowed to implement these extensions. 
+Thus, these strictly speaking are not extensions of Ada 2005; they're 
+part of Ada 2005. Practically, however, they very well may be extensions, 
+as early Ada 2005 implementations might not implement the extension. 
+Therefore, some Ada 2005 implementations may be able to compile the examples, 
+while others might not. In contrast, Ada 2012 compilers will always support 
+the extensions. Therefore, we document these for completeness.</div>
+<div class="paranum"><a name="p40.hh">40.hh/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 2012 or Ada 2022 RM.</div>
+<div class="paranum"><a name="p40.ii">40.ii/3</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em">&nbsp;<BR>
+ <BR>
+As explained above, the next heading does not represent any language 
+change:&nbsp;</div>
+
+<H4 Class="centered">Wording Changes from Ada 2005</H4>
+<div class="paranum"><a name="p40.jj">40.jj/3</a></div>
+<div class="Annotations"><A NAME="I1063"></A>This heading lists some 
+of the nonsemantic changes between the Ada 2005 RM and the Ada 2012 RM. 
+This heading lists only &ldquo;interesting&rdquo; changes (for instance, 
+editorial corrections are not listed). Items marked <B>Correction:</B> 
+come from Ada Issues classified as Binding Interpretations and strictly 
+speaking belong to Ada 2005; other items only belong to Ada 2012.</div>
+<div class="paranum"><a name="p40.kk">40.kk/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in the Ada 2012 or Ada 2022 RM.&nbsp;</div>
+<div class="paranum"><a name="p40.ll">40.ll/5</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em"><B>Discussion: 
+</B>&nbsp;<BR>
+ <BR>
+The next three headings list all language changes between Ada 2012 (the 
+language defined by ISO/IEC 8652:2012(E)) and Ada 2022 (the language 
+defined by this edition of the Reference Manual). Each language change 
+falls into one of the following three categories:&nbsp;</div>
+
+<H4 Class="centered">Inconsistencies With Ada 2012</H4>
+<div class="paranum"><a name="p40.mm">40.mm/5</a></div>
+<div class="Annotations"><A NAME="I1064"></A>This heading lists all of 
+the upward inconsistencies between Ada 2012 and Ada 2022. Upward inconsistencies 
+are situations in which a legal Ada 2012 program is a legal Ada 2022 
+program with different semantics.</div>
+<div class="paranum"><a name="p40.nn">40.nn/5</a></div>
+<div class="Annotations">Inconsistencies marked with <B>Corrigendum:</B><A NAME="I1065"></A> 
+are corrections to the original Ada 2012 definition added by Technical 
+Corrigendum 1 to Ada 2012. Inconsistencies marked with <B>Correction:</B><A NAME="I1066"></A> 
+are corrections to the original Ada 2012 definition added by this edition 
+of the Reference Manual. Formally, these are inconsistencies caused by 
+Ada Issues classified as Binding Interpretations; implementations of 
+Ada 2012 are supposed to follow these corrections, not the original flawed 
+language definition. Thus, these strictly speaking are not inconsistencies 
+between Ada 2012 and Ada 2022. Practically, however, they very well may 
+be, as early Ada 2012 implementations might not follow the recommendation. 
+Inconsistencies so marked are not portable between Ada 2012 implementations, 
+while usually Ada 2022 will have more clearly defined behavior. Therefore, 
+we document these for completeness.</div>
+<div class="paranum"><a name="p40.oo">40.oo/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in any version of the Ada RM.&nbsp;</div>
+
+<H4 Class="centered">Incompatibilities With Ada 2012</H4>
+<div class="paranum"><a name="p40.pp">40.pp/5</a></div>
+<div class="Annotations"><A NAME="I1067"></A>This heading lists all of 
+the upward incompatibilities between Ada 2012 and Ada 2022, except for 
+the ones listed under &ldquo;Inconsistencies With Ada 2012&rdquo; above. 
+These are the situations in which a legal Ada 2012 program is illegal 
+in Ada 2022.</div>
+<div class="paranum"><a name="p40.qq">40.qq/5</a></div>
+<div class="Annotations">As with inconsistencies, incompatibilities marked 
+with <B>Corrigendum:</B><A NAME="I1068"></A> are corrections to the original 
+Ada 2012 definition added by Corrigendum 1 to Ada 2012, and incompatibilities 
+marked with <B>Correction:</B><A NAME="I1069"></A> are corrections to 
+the original Ada 2012 definition added by this edition. Formally, these 
+are incompatibilities caused by Ada Issues classified as Binding Interpretations; 
+implementations of Ada 2012 are supposed to follow these corrections, 
+not the original flawed language definition. Thus, these strictly speaking 
+are not incompatibilities between Ada 2012 and Ada 2022. Practically, 
+however, they very well may be, as early Ada 2012 implementations might 
+not follow the recommendation. Therefore, some Ada 2012 implementations 
+may be able to compile the examples, while others might not. In contrast, 
+Ada 2022 compilers will have consistent behavior. Therefore, we document 
+these for completeness.</div>
+<div class="paranum"><a name="p40.rr">40.rr/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in any version of the Ada RM.&nbsp;</div>
+
+<H4 Class="centered">Extensions to Ada 2012</H4>
+<div class="paranum"><a name="p40.ss">40.ss/5</a></div>
+<div class="Annotations"><A NAME="I1070"></A>This heading is used to 
+list all upward compatible language changes; that is, language extensions. 
+These are the situations in which a legal Ada 2022 program is not a legal 
+Ada 2012 program. The vast majority of language changes fall into this 
+category.</div>
+<div class="paranum"><a name="p40.tt">40.tt/5</a></div>
+<div class="Annotations">As with incompatibilities, extensions marked 
+with <B>Corrigendum:</B><A NAME="I1071"></A> are corrections to the original 
+Ada 2012 definition added by Corrigendum 1 to Ada 2012, and extensions 
+marked with <B>Correction:</B> are corrections to the original Ada 2012 
+definition added by this edition. Formally, these are extensions allowed 
+by Ada Issues classified as Binding Interpretations. As corrections, 
+implementations of Ada 2012 (and sometimes Ada 95) are allowed to implement 
+these extensions. Thus, these strictly speaking are not extensions of 
+Ada 2012; they're part of Ada 2012. Practically, however, they very well 
+may be extensions, as early Ada 2012 implementations might not implement 
+the extension. Therefore, some Ada 2012 implementations may be able to 
+compile the examples, while others might not. In contrast, Ada 2022 compilers 
+will always support the extensions. Therefore, we document these for 
+completeness.</div>
+<div class="paranum"><a name="p40.uu">40.uu/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in any version of the Ada RM.</div>
+<div class="paranum"><a name="p40.vv">40.vv/4</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em">&nbsp;<BR>
+ <BR>
+As explained above, the next heading does not represent any language 
+change:&nbsp;</div>
+
+<H4 Class="centered">Wording Changes from Ada 2012</H4>
+<div class="paranum"><a name="p40.ww">40.ww/5</a></div>
+<div class="Annotations"><A NAME="I1072"></A>This heading lists some 
+of the nonsemantic changes between the Ada 2012 RM and the Ada 2022 RM. 
+This heading lists only &ldquo;interesting&rdquo; changes (for instance, 
+editorial corrections are not listed). Items marked <B>Corrigendum:</B><A NAME="I1073"></A> 
+are included in Corrigendum 1 to Ada 2012, and items marked with <B>Correction:</B> 
+are added by this edition. In both cases, the items come from Ada Issues 
+classified as Binding Interpretations and strictly speaking belong to 
+Ada 2012; other items only belong to Ada 2022.</div>
+<div class="paranum"><a name="p40.xx">40.xx/4</a></div>
+<div class="Annotations">This is not part of the definition of the language, 
+and does not appear in any version of the Ada RM.&nbsp;</div>
+<div class="paranum"><a name="p40.yy">40.yy/6</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em"><span class="insert6"><B>Discussion: 
+</B>&nbsp;<BR>
+ <BR>
+The next three headings list all language changes between original Ada 
+2022 (the language defined by unmodified ISO/IEC 8652:2023(E)) and Ada 
+202y (the language defined by this draft). Each language change falls 
+into one of the following three categories:</span>&nbsp;</div>
+
+<H4 Class="centered">Inconsistencies With Ada 2022</H4>
+<div class="paranum"><a name="p40.zz">40.zz/6</a></div>
+<div class="Annotations"><span class="insert6"><A NAME="I1074"></A>This 
+heading lists all of the upward inconsistencies between original Ada 
+2022 and current Ada 202y. Upward inconsistencies are situations in which 
+a legal Ada 2022 program is a legal Ada 202y program with different semantics.</span></div>
+<div class="paranum"><a name="p40.aaa">40.aaa/6</a></div>
+<div class="Annotations"><span class="insert6">Inconsistencies marked 
+with <B>Corrigendum:</B><A NAME="I1075"></A> are corrections to the original 
+Ada 2022 definition added by this edition of the Reference Manual. Formally, 
+these are inconsistencies caused by Ada Issues classified as Binding 
+Interpretations; implementations of Ada 2022 are supposed to follow these 
+corrections, not the original flawed language definition. Thus, these 
+strictly speaking are not inconsistencies between Ada 2022 and Ada 202y. 
+Practically, however, they very well may be, as early Ada 2022 implementations 
+might not follow the recommendation. Inconsistencies so marked are not 
+portable between Ada 2022 implementations, while usually Ada 202y will 
+have more clearly defined behavior. Therefore, we document these for 
+completeness.</span></div>
+<div class="paranum"><a name="p40.bbb">40.bbb/6</a></div>
+<div class="Annotations"><span class="insert6">This is not part of the 
+definition of the language, and does not appear in any version of the 
+Ada RM.</span>&nbsp;</div>
+
+<H4 Class="centered">Incompatibilities With Ada 2022</H4>
+<div class="paranum"><a name="p40.ccc">40.ccc/6</a></div>
+<div class="Annotations"><span class="insert6"><A NAME="I1076"></A>This 
+heading lists all of the upward incompatibilities between Ada 2022 and 
+Ada 202y except for the ones listed under &ldquo;Inconsistencies With 
+Ada 2022&rdquo; above. These are the situations in which a legal Ada 
+2022 program is illegal in Ada 202y.</span></div>
+<div class="paranum"><a name="p40.ddd">40.ddd/6</a></div>
+<div class="Annotations"><span class="insert6">As with inconsistencies, 
+incompatibilities marked with <B>Corrigendum:</B><A NAME="I1077"></A> 
+are corrections to the original Ada 2022 definition added by this edition. 
+Formally, these are incompatibilities caused by Ada Issues classified 
+as Binding Interpretations; implementations of Ada 2022 are supposed 
+to follow these corrections, not the original flawed language definition. 
+Thus, these strictly speaking are not incompatibilities between Ada 2022 
+and Ada 202y. Practically, however, they very well may be, as early Ada 
+2022 implementations might not follow the recommendation. Therefore, 
+some Ada 2022 implementations may be able to compile the examples, while 
+others might not. In contrast, Ada 202y compilers will have consistent 
+behavior. Therefore, we document these for completeness.</span></div>
+<div class="paranum"><a name="p40.eee">40.eee/6</a></div>
+<div class="Annotations"><span class="insert6">This is not part of the 
+definition of the language, and does not appear in any version of the 
+Ada RM.</span>&nbsp;</div>
+
+<H4 Class="centered">Extensions to Ada 2022</H4>
+<div class="paranum"><a name="p40.fff">40.fff/6</a></div>
+<div class="Annotations"><span class="insert6"><A NAME="I1078"></A>This 
+heading is used to list all upward compatible language changes; that 
+is, language extensions. These are the situations in which a legal Ada 
+202y program is not a legal Ada 2022 program. The vast majority of language 
+changes fall into this category.</span></div>
+<div class="paranum"><a name="p40.ggg">40.ggg/6</a></div>
+<div class="Annotations"><span class="insert6">As with incompatibilities, 
+extensions marked with <B>Corrigendum:</B><A NAME="I1079"></A> are corrections 
+to the original Ada 2022 definition added by this edition. Formally, 
+these are extensions allowed by Ada Issues classified as Binding Interpretations. 
+As corrections, implementations of Ada 2022 (and sometimes previous versions) 
+are allowed to implement these extensions. Thus, these strictly speaking 
+are not extensions of Ada 2022; they're part of Ada 2022. Practically, 
+however, they very well may be extensions, as early Ada 2022 implementations 
+might not implement the extension. Therefore, some Ada 2022 implementations 
+may be able to compile the examples, while others might not. In contrast, 
+Ada 202y compilers will always support the extensions. Therefore, we 
+document these for completeness.</span></div>
+<div class="paranum"><a name="p40.hhh">40.hhh/6</a></div>
+<div class="Annotations"><span class="insert6">This is not part of the 
+definition of the language, and does not appear in any version of the 
+Ada RM.</span></div>
+<div class="paranum"><a name="p40.iii">40.iii/6</a></div>
+<div class="Annotations" style="margin-bottom: 0.4em"><span class="insert6">&nbsp;<BR>
+ <BR>
+As explained above, the next heading does not represent any language 
+change:</span>&nbsp;</div>
+
+<H4 Class="centered">Wording Changes from Ada 2022</H4>
+<div class="paranum"><a name="p40.jjj">40.jjj/6</a></div>
+<div class="Annotations"><span class="insert6"><A NAME="I1080"></A>This 
+heading lists some of the nonsemantic changes between the Ada 2022 RM 
+and the Ada 202y RM. This heading lists only &ldquo;interesting&rdquo; 
+changes (for instance, editorial corrections are not listed). Items marked 
+<B>Corrigendum:</B><A NAME="I1081"></A> are added by this edition. These 
+items come from Ada Issues classified as Binding Interpretations and 
+strictly speaking belong to Ada 2022; other items only belong to Ada 
+202y.</span></div>
+<div class="paranum"><a name="p40.kkk">40.kkk/6</a></div>
+<div class="Annotations"><span class="insert6">This is not part of the 
+definition of the language, and does not appear in any version of the 
+Ada RM.</span>&nbsp;</div>
+
+<HR>
+<div style="margin-top: 0.0em; margin-bottom: 0.6em"><A HREF="AA-TOC.html"><IMG SRC="cont.gif" ALT="Contents" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-0-4.html"><IMG SRC="index.gif" ALT="Index" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-STDS.html"><IMG SRC="lib.gif" ALT="References" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-SRCH.html"><IMG SRC="find.gif" ALT="Search" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1-1.html"><IMG SRC="prev.gif" ALT="Previous" BORDER=0></A>&nbsp;
+&nbsp;<A HREF="AA-1-1-3.html"><IMG SRC="next.gif" ALT="Next" BORDER=0></A>&nbsp;
+</div>
+<DIV Style="margin-top:0.0em"><IMG SRC="AE_logo.gif" height=100 width=113 align=right ALT="Ada-Europe">
+<SPAN Style="vertical-align: middle; font-size:120%">Ada 2005 and 2012 Editions sponsored in part by <SPAN Style="font-size: 125%"><A HREF="http://www.ada-europe.org/"><B>Ada-Europe</B></A></SPAN></SPAN></DIV>
+</BODY>
+</HTML>
